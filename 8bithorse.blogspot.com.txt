@@ -1,0 +1,3 @@
+author: //span[contains(concat(' ',normalize-space(@class),' '),' fn ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
+test_url: http://8bithorse.blogspot.com/2018/07/the-vagrant.html
