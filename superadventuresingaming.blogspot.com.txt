@@ -1,0 +1,4 @@
+author: //span[contains(concat(' ',normalize-space(@class),' '),' fn ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-body ')]
+date: //h2[contains(concat(' ',normalize-space(@class),' '),' date-header ')]//span
+test_url: http://superadventuresingaming.blogspot.com/2017/03/serious-sam-first-encounter-pc.html
