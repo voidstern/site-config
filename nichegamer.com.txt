@@ -1,3 +1,6 @@
+author: //h3
 body: //div[@id='generated-content']
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' authortek ')]
+strip: //aside[@id='sidebar']
 test_url: https://nichegamer.com/2018/08/03/new-shadow-of-the-tomb-raider-trailer-introduces-various-tombs/
+title: //h1
