@@ -1,0 +1,12 @@
+author: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-author-name ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' td-ss-main-content ')]
+date: //time[contains(concat(' ',normalize-space(@class),' '),' entry-date ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' td_block_related_posts ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-next-post ')]//div[contains(concat(' ',normalize-space(@class),' '),' td-post-next-prev-content ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-prev-post ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' robots-nocontent ')]
+strip: //h4[contains(concat(' ',normalize-space(@class),' '),' td-comments-title ')]
+
+test_url: https://www.caracaschronicles.com/2018/08/08/with-sentence-included/
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
