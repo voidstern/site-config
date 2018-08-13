@@ -7,6 +7,7 @@ strip: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-next-pos
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' td-post-prev-post ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' robots-nocontent ')]
 strip: //h4[contains(concat(' ',normalize-space(@class),' '),' td-comments-title ')]
+strip: //div[@id='respond']
 strip_id_or_class: related
 strip_id_or_class: next
 
