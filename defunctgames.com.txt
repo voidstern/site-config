@@ -8,6 +8,8 @@ strip: //div[contains(concat(' ',normalize-space(@class),' '),' searchfooter ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' current_new ')]
 strip: //ul[contains(concat(' ',normalize-space(@class),' '),' review-game-card ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' reviewbyline ')]
+strip: //*[@id="currentdate"]
+strip: //*[@id="loginform"]
 strip_id_or_class: dgbottom
 strip_id_or_class: staffcard
 strip_id_or_class: searWords
