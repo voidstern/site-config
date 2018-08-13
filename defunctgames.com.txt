@@ -10,6 +10,8 @@ strip: //ul[contains(concat(' ',normalize-space(@class),' '),' review-game-card 
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' reviewbyline ')]
 strip: //*[@id="currentdate"]
 strip: //*[@id="loginform"]
+strip: //*[@id="disqus_thread"]
+strip: //table[contains(concat(' ',normalize-space(@class),' '),'  ')]
 strip_id_or_class: dgbottom
 strip_id_or_class: staffcard
 strip_id_or_class: searWords
