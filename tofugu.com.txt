@@ -1,3 +1,9 @@
-body://div[@class='entry-content']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' container ')]
+date: //time
 
-test_url: http://www.tofugu.com/2015/07/20/interview-with-toriena-japanese-chiptune/
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' search-area-input ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' embed-newsletter ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' row ')]
+
+test_url: https://www.tofugu.com/japanese/rendaku/
+title: //small[contains(concat(' ',normalize-space(@class),' '),' article-subtitle ')]//span[contains(concat(' ',normalize-space(@class),' '),' article-highlight ')]
