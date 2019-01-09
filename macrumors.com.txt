@@ -7,6 +7,6 @@ strip_id_or_class: commentsContainer
 strip_id_or_class: linkback
 
 # set title
-title: //h3
+title: //h3[@class='title']
 #strip: //div[@class='content']/h3
 test_url: http://www.macrumors.com/2010/11/10/apple-debuts-new-apple-tv-and-itunes-movie-content-in-japan/
