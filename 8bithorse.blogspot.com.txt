@@ -1,0 +1,4 @@
+author: //span[contains(concat(' ',normalize-space(@class),' '),' fn ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
+title: //div[contains(concat(' ',normalize-space(@class),' '),' title ')]//h2
+test_url: http://8bithorse.blogspot.com/2018/08/flat-heroes.html

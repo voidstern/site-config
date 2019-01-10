@@ -1,0 +1,4 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-body ')]
+date: //span[contains(concat(' ',normalize-space(@class),' '),' post-timestamp ')]
+test_url: http://www.indieretronews.com/2018/08/hera-primera-juno-first-clone-on.html
+title: //h3[contains(concat(' ',normalize-space(@class),' '),' post-title ')]

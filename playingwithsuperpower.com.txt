@@ -1,0 +1,11 @@
+author: //span[contains(concat(' ',normalize-space(@class),' '),' author ')] 
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post ')]
+strip: //div[@id='entry-author-info']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' ec-stars-outer ')]
+strip: //h3
+strip: //strong
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' gallery ')]
+strip_id_or_class: entry-meta
+strip_id_or_class: strong
+test_url: http://playingwithsuperpower.com/tiny-toon-adventures-wacky-sports-challenge-review/
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]

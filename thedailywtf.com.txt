@@ -1,0 +1,5 @@
+author: //a[contains(concat(' ',normalize-space(@class),' '),' author-name ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body ')]
+date: //span[contains(concat(' ',normalize-space(@class),' '),' date ')]
+test_url: https://thedailywtf.com/articles/constantly-true
+title: //h2[contains(concat(' ',normalize-space(@class),' '),' title ')]

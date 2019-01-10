@@ -1,0 +1,5 @@
+body: //article[contains(concat(' ',normalize-space(@class),' '),' post ')]
+date: //time[contains(concat(' ',normalize-space(@class),' '),' entry-date ')]
+test_url: http://readretro.com/could-sams-journey-be-nintendo-entertainment-system-bound/
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' robots-nocontent ')]

@@ -1,0 +1,24 @@
+body: //div[@id='body-container']
+
+strip: //ul[@id='nav']
+strip: //div[@id='showbyline']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' bottomlinks ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' searchfooter ')]//div[@id='searchbox']//form//div[@id='gobutton']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' searchfooter ')]//div[@id='searchbox']//form//div[@id='searWords']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' current_new ')]
+strip: //ul[contains(concat(' ',normalize-space(@class),' '),' review-game-card ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' reviewbyline ')]
+strip: //*[@id="currentdate"]
+strip: //*[@id="loginform"]
+strip: //*[@id="disqus_thread"]
+strip: //table[contains(concat(' ',normalize-space(@class),' '),'  ')]
+strip_id_or_class: dgbottom
+strip_id_or_class: staffcard
+strip_id_or_class: searWords
+strip_id_or_class: gobutton
+strip_id_or_class: summary
+strip_id_or_class: report
+strip_id_or_class: rightside
+
+test_url: http://www.defunctgames.com/gameover/24/game-over-strider-strider-returns-genesis
+title: //div[@id='eptitle']
