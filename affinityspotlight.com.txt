@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' a-article-content ')]
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' c-banner-heading ')]
+date: //time
+
+test_url: https://affinityspotlight.com/article/illustrator-and-graffiti-artist-tom-hrvb-im-mostly-interested-in-urban-spaces/

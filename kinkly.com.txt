@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' jq-articleBody ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' author-name ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' featured-form ')]
+Strip: //div[contains(concat(' ',normalize-space(@class),' '),' featured-link ')]//div[contains(concat(' ',normalize-space(@class),' '),' row ')]
+
+
+test_url: https://www.kinkly.com/anal-sex-on-tv-5-taboo-busting-butt-scenes/2/17330
