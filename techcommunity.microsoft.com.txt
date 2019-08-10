@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' lia-quilt-blog-topic-message ')]//div[contains(concat(' ',normalize-space(@class),' '),' lia-quilt-row ') and (contains(concat(' ',normalize-space(@class),' '),' lia-quilt-row-main '))]
+title: //div[contains(concat(' ',normalize-space(@class),' '),' MessageSubjectIcons ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' lia-message-author-with-avatar ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' lia-quilt-column-alley ') and (contains(concat(' ',normalize-space(@class),' '),' lia-quilt-column-alley-right '))]//div[contains(concat(' ',normalize-space(@class),' '),' lia-message-post-date ') and (contains(concat(' ',normalize-space(@class),' '),' lia-component-post-date ')) and (contains(concat(' ',normalize-space(@class),' '),' lia-component-message-view-widget-post-date '))]//span[contains(concat(' ',normalize-space(@class),' '),' DateTime ')]//span[contains(concat(' ',normalize-space(@class),' '),' local-friendly-date ')]
+
+prune: no
+
+test_url: https://techcommunity.microsoft.com/t5/Office-365-Blog/How-to-manage-Office-365-ProPlus-Channels-for-IT-Pros/ba-p/795813
