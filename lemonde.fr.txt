@@ -2,6 +2,7 @@ title: //h1[@class='article__title']
 
 # We can have multiple authors
 author: //span[contains(concat(' ',normalize-space(@class),' '),' author__name ')]
+author: //div[@class="entry-meta"]//a[contains(@class, "url")]
 
 # Last edition date (if any)
 date: //time[@itemprop='dateModified']/@datetime
@@ -13,6 +14,9 @@ body: //section[contains(concat(' ',normalize-space(@class), ' '), ' article__co
 body: //section[contains(concat(' ',normalize-space(@class), ' '), ' video ')]
 
 strip: //div[contains(concat(' ',normalize-space(@class), ' '), ' related-content--video ')]
+strip: //section[contains(@class, 'services')]
+strip: //section[@id="js-capping"]
+strip: //footer[contains(@class, "article__footer-single")]
 
 # Remove "Lire aussi" blocks
 strip: //section[contains(concat(' ',normalize-space(@class),' '),' catcher ')]

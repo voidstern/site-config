@@ -23,11 +23,14 @@ strip_id_or_class: iqadtile4
 strip_id_or_class: list-jtoc
 strip_id_or_class: table-jtoc
 strip_id_or_class: implied
-strip_id_or_class: social-
+strip_id_or_class: social-tools
 strip_id_or_class: comments
 strip_id_or_class: footer
 strip_id_or_class: job-market
 strip_id_or_class: tags
+strip: //div[contains(@class, 'authors--withsource')]
+strip: //div[@class='toc']
+strip: //li[not(.//text()[normalize-space()])][not(@class)]
 
 # Tidy up galleries (could still be improved, though)
 strip: //img[@src='']
@@ -36,6 +39,7 @@ strip: //img[@src='']
 # strip: //li[not(*)]
 strip: //div[contains(@style,'margin')]
 strip: //figure[contains(@id,'gvideo')]
+strip: //figure/figcaption[contains(text(), 'Bitte aktivieren Sie Javascript')]
 
 
 # Try yourself
