@@ -13,22 +13,11 @@ author: substring-after(//span[@class='Autor'], 'von ')
 author: //span[@class='caps last']/span[@class='caps last']
 author: //a[@rel='author']
 
-# Set date
-date: //span[@class='Datum']
-date: //span[@class='Datum'],/span
-
 # Fetch full multipage articles
 next_page_link: //a[@title='Nächste Seite']
 
 # Content is here
 body: //div[@class='Artikel']
-
-# Tidy up before article
-strip: //div[@id='FAZHeaderNeu']
-strip: //h2[@itemprop='headline']
-strip: //span[@class='Datum']
-strip: //span[@class='Autor']
-strip_id_or_class: ArticlePagerTop
 
 # General cleanup
 strip: //div[@class='clear']
