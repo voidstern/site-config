@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 title: substring-after(//title, 'Right:')
 body: //div[@class = 'post-body']
 author: substring-after(//*[@class='post-author'], 'by')
@@ -5,3 +6,10 @@ date: concat(//*[@class='date-header'], ' ', //*[@class='post-timestamp']/a)
 convert_double_br_tags: yes
 
 test_url: http://www.fivethirtyeight.com/2010/07/does-rnc-have-structural-problems.html
+=======
+body: //div[contains(@class, 'single-post-content')]
+prune: no
+
+test_url: https://fivethirtyeight.com/features/some-of-our-best-work-from-2019/
+test_url: https://fivethirtyeight.com/features/election-update-what-are-the-chances-of-a-brokered-convention/
+>>>>>>> b9619e684b1633783a493ec8f0cd0f06c49ddcb8
