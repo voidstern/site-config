@@ -1,9 +1,10 @@
-title: //h2[@class='headline']
+title: //meta[@property="og:title"]/@content
+date: (//time[contains(@class, "c-sHeader__date-published")])[1]
+body: //div[@id="js-Content"]
 
-body: //div[@class='ContentPrint']
+strip_id_or_class: u-skip
+strip_id_or_class: c-relatedPostList
 
 prune: no
 
-single_page_link: //a[contains(@href, '/printVersion/')]
-
-test_url: http://www.villagevoice.com/2010-03-16/news/new-york-s-ten-worst-landlords/
+test_url: https://www.villagevoice.com/2020/09/29/robert-mitchum-a-seasoned-champion/

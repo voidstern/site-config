@@ -1,20 +1,5 @@
-title: //header[@class='article-topper__title']
+body: //div[@id='content--body']
+date: //div[contains(@class, 'contentHeader__publishDate')]
 
-body: //section[contains(@class, 'body')]
-
-# Author & Date for News and Featured Stories
-author: //ul[@class='byline']/li/a
-author: substring-before(substring-after(//ul[@class='byline']/li, 'By '), ' on')
-date: substring-after(//ul[@class='byline']/li, 'on ')
-
-# Author & Date for "Views"
-author: //div[@class='view-byline']/div[@class='meta']/h2[1]
-date: //div[@class='view-byline']/div[@class='meta']/h2[2]
-
-strip_id_or_class: l-article-list
-strip_id_or_class: l-automated-related--single
-strip_id_or_class: l-cta--left
-strip_id_or_class: l-automated-trending--ordered
-
-next_page_link: //section[@class='pagination']/a[contains(@class, 'continue')]
-test_url: http://www.technologyreview.com/news/427567/facebooks-telescope-on-human-behavior/
+test_url: https://www.technologyreview.com/2020/09/10/1008282/north-korea-hackers-money-laundering-cryptocurrency-bitcoin/
+test_contains: raise false alarms for investigators
