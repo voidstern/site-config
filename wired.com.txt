@@ -1,6 +1,7 @@
 title: //meta[@property="og:title"]/@content
 author: //meta[@name='Author']/@content
 date: //meta[@name='DisplayDate']/@content
+body: //div[@data-testid="ArticlePageChunks"]
 body: //div[contains(@class, 'article__chunks') or contains(@class, 'content-header__dek')]
 body: (//article[contains(@class, 'body-copy')])[1]
 body: (//article[contains(@class, 'article-body-component')])[1]
@@ -24,6 +25,7 @@ strip_id_or_class: inset-left-component
 strip_id_or_class: recirc-most-popular
 strip_id_or_class: callout--has-top-border
 strip_id_or_class: newsletter-subscribe-form
+strip_id_or_class: iframe-embed
 
 strip: //div[@id="social"]
 strip: //img[contains(@alt, 'capital letter')]
