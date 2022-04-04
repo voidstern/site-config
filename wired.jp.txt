@@ -1,3 +1,5 @@
+# From wired.com.txt (with some changes)
+
 title: //meta[@property="og:title"]/@content
 author: //meta[@name='Author']/@content
 date: //meta[@name='DisplayDate']/@content
@@ -41,18 +43,8 @@ replace_string: <!-- /noscript -->
 # Remove gallery?
 strip_id_or_class: wpgallery
 
-#strip: //text()[contains(., 'nextpage')]
 
 prune: no
 
-# 2017-07-27 No longer used it seems
-# single_page_link: //a[.='View All' and contains(@href, '/all/')]
-
-test_url: https://www.wired.com/story/telltale-heart-fitbit-murder/
-test_contains: twiddling his thumbs in her direction
-test_url: https://www.wired.com/2017/07/inside-cubas-diy-internet-revolution/
-test_contains: I should call the hostess once I know
-test_url: http://www.wired.com/cloudline/2011/10/meet-arms-cortex-a15-the-future-of-the-ipad-and-possibly-the-macbook-air/
-test_url: http://www.wired.com/wiredenterprise/2013/09/docker/
-test_url: http://www.wired.com/threatlevel/2012/05/ff_counterfeiter/all/
-test_url: http://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/
+test_url: https://wired.jp/article/10-most-read-stories-february-2022/
+test_contains: 07 Spotify
