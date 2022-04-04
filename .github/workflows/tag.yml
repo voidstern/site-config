@@ -32,5 +32,10 @@ jobs:
       - name: "Configure upstream"
         run: "git remote add upstream https://github.com/fivefilters/ftr-site-config.git"
 
+      - name: "Setup git config"
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
       - name: "Create tag"
         run: "make update"
