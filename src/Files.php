@@ -21,7 +21,6 @@ class Files
 
         $finder = new Finder();
         $finder->files()
-            ->sortByName()
             ->ignoreDotFiles(false)
             ->name('/\.txt$/')
             ->in($dirs);
