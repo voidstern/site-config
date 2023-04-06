@@ -1,7 +1,7 @@
 update: ## Update from upstream and create a new release
 update:
 	git fetch --all -p
-	git merge upstream/master --no-ff -q -m "Merge remote-tracking branch 'upstream/master'"
+	git merge upstream/master  --allow-unrelated-histories --no-ff -q -m "Merge remote-tracking branch 'upstream/master'"
 	./RMT release --type=patch --auto-publish=y
 
 .DEFAULT_GOAL := help
