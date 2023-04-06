@@ -1,10 +1,11 @@
-body: //article[@itemprop='articleBody']
-author: //span[@class='byline__author-name']
-date: //time[@class='article-date-published']
-tidy: no
+author: //meta[@name="DCSext.author"]/@content
+date: //meta[@name="DCSext.articleFirstPublished"]/@content
+title: //meta[@property="og:title"]/@content
+body: //div[@itemprop="articleBody"]
+
 prune: no
 
-test_url: http://www.telegraph.co.uk/news/worldnews/europe/ireland/8663451/Is-Ireland-divorcing-from-the-Catholic-Church.html
+test_url: https://www.telegraph.co.uk/news/2021/02/16/covidlockdown-continue-cases-drop-1000-day/
 
 requires_login: true
 not_logged_in_xpath: //div[@class="wsj-snippet-login"]

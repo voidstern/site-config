@@ -5,6 +5,9 @@ prune: no
 # The value can be anything, as long as it is set at all
 http_header(Cookie): zonconsent=2022-09-03T19:45:59.150Z
 
+# Pretending to be the Google bot disables the paywall banner for now
+http_header(user-agent): Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
 # Figures are wrapped in a noscript tag which is itself wrapped in a
 # conditional comment. Feed readers will fail to parse this correctly
 # so get rid of the noscript tag altogether.
@@ -29,13 +32,14 @@ strip_id_or_class: ad-container
 #######################################
 
 single_page_link: //li[@class='article-pager__all']//a[@data-ct-label='all']
-
 author: //a[@class='byline__author']/span
 author: substring-after(//span[@class='metadata__source'], 'Quelle: ')
 
+body: //div[@class='summary' or contains(@class, 'article-body') or @class='byline']
 body: //main/article/div[@itemprop='articleBody']
 body: //div[contains(concat(' ',normalize-space(@class),' '),' article-page ')]
 
+strip: //h2[@class='visually-hidden']
 strip: //a[@href='#']
 strip: //form[@id='newsletter-teaser-form']
 strip_id_or_class: 'article-pagination article__item'

@@ -32,6 +32,7 @@ strip_id_or_class:related-coverage
 strip_id_or_class:ad-header
 strip_id_or_class:bottom-ad
 strip_id_or_class:advert_item
+strip_id_or_class:burst-app
 strip://a[contains(@href, 'nytimes.com/adx/')]
 strip: //nyt_byline
 strip: //span[contains(@class, 'slideshow') or contains(@class, 'video')]
@@ -45,9 +46,18 @@ strip: //aside
 strip: //div[@data-test-id="RecommendedNewsletter"]
 strip: //div[@data-test-id="share-tools"]
 strip: //div[@role="complementary"]
+strip: //section[contains(@role, "complementary")]
 strip: //video
 strip: //span/span[contains(text(), 'Credit')]
 strip: //span/span/span[contains(text(), 'Credit')]
+strip: //img[contains(@class, 'post-screenshot')]
+
+# August 2022
+strip_id_or_class: sponsor-wrapper
+# Preserve figcaptions, which can also have aria-hidden="true" inside
+strip: //*[@aria-hidden="true" and not(./parent::figcaption)]
+strip: //*[@data-testid="share-tools"]
+strip: //*[contains(@id, '-recirc')]
 
 # If HTML parsed by JS... 
 # let's remove duplicate images
@@ -60,6 +70,9 @@ strip_id_or_class: robots-nocontent
 strip_id_or_class: hidden
 strip_id_or_class: NYT_MAIN_CONTENT_1_REGION
 strip_id_or_class: related-links-block
+strip_id_or_class: g-LABELS
+
+http_header(user-agent): curl/7.83.1
 
 prune: no
 tidy: no
@@ -93,3 +106,4 @@ test_url: http://www.nytimes.com/2013/08/15/nyregion/when-the-new-york-city-subw
 test_url: http://www.nytimes.com/2004/02/29/weekinreview/correspondence-class-consciousness-china-s-wealthy-live-creed-hobbes-darwin-meet.html
 test_url: http://www.nytimes.com/2014/06/19/opinion/gail-collins-romney-and-the-2016-contenders-huddle.html
 test_url: https://www.nytimes.com/interactive/2015/12/16/upshot/100000004092329.app.html?_r=2
+test_url: https://www.nytimes.com/2022/02/27/business/economy/price-increases-inflation.html
