@@ -11,9 +11,9 @@ strip_id_or_class: author__avatar-block
 strip_id_or_class: slice-container-newsletterForm
 
 # Fix JS-only images
-find_string: src="https://vanilla.futurecdn.net/techradar/media/img/missing-image.svg"
-replace_string: old-src="https://vanilla.futurecdn.net/techradar/media/img/missing-image.svg"
+find_string: src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg"
+replace_string: old-src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg"
 find_string: data-original-mos="http
 replace_string: src="http
 
-test_url: https://www.techradar.com/reviews/xiaomi-13
+test_url: https://www.tomsguide.com/news/chatgpt-explained
