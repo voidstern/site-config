@@ -11,7 +11,7 @@
     >
 
     <testsuites>
-        <testsuite name="Graby Site Config Test Suite">
+        <testsuite name="Graby Site Config">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>
