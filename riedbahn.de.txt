@@ -45,4 +45,4 @@ replace_string: <img src='
 prune: no
 tidy: no
 
-test_url: https://www.hanau-wuerzburg-fulda.de/aktuelles-reader/erste-Projekte-zur-Kompensation-des-Streckenausbaus-Hanau-Gelnhausen.html
+test_url: https://www.riedbahn.de/neuigkeiten-reader/ersatzverkehr-an-der-riedbahn-busflotte-und-team-sind-komplett-2.html

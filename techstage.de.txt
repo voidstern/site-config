@@ -1,5 +1,5 @@
 body: //section[@id="article_content"]
-body: //div[@class='article-gallery'] | //div[@id='lead'] | //div[@id='article-content-body']
+body: //div[contains(@class, 'article-gallery')] | //div[@id='lead'] | //div[@id='article-content-body']
 
 author: //meta[@name="author"]/@content
 date: //article//time[@datetime]/@datetime
@@ -16,11 +16,20 @@ strip_id_or_class: a-grid
 strip_id_or_class: comments_container
 strip: //a-tabs
 strip: //section[contains(@class, 'teaser')]
+strip: //div[contains(@class, 'guenstiger')]
 
 # strip heading and description for image galeries, which would
 # be shown UNDER the whole bunch of images instead
 strip_id_or_class: ring-mini-gallery-title
 strip_id_or_class: ring-mini-gallery-desc
+
+
+# rewrite img-links, needed for FreshRSS
+find_string: data-pspw-image="https://ocdn
+replace_string: src="https://ocdn
+
+find_string: src="data:image
+replace_string: foo="
 
 prune: no
 

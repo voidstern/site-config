@@ -1,9 +1,10 @@
 title: //div[contains(@class, 'main-article-titre')]
 body: //div[contains(@class, 'post-content')]
-author: //div[@class="post-informations"]//a
+author: //div[@class="post-informations"]//a[contains(@href, 'https://www.canardpc.com/auteur/')]
 
 strip: //div[contains(@class, 'slick-cloned')]
 strip_id_or_class: locomotive-navigation
+strip: //div[contains(@class, "encarts")]//div[contains(@class, "layout-framed")]
 
 # wallabag-specific login directives (not supported in FTR)
 requires_login: yes
