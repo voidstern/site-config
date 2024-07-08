@@ -1,12 +1,9 @@
 # Seems to be redirecting to articles.washingtonpost.com for many users - still true?
 
+body: //div[contains(@class, 'meteredContent')]
 body: //div[contains(@class, 'article-body')]
-# this one doesn't appear to be in use - remove?
-body: //div[contains(@class, "article_body")]
 # print view
 body: //body[@id='print_facet']//div[@id='content']
-# this one doesn't appear to be in use - remove?
-body: //div[@id='print_facet']//div[@id='body']
 
 # this top one currently appears after JS has done its work
 # author:(//article//div[contains(@class, 'author-names')])[1]
@@ -54,6 +51,7 @@ strip_id_or_class: tooltip
 strip_id_or_class: powa-wrapper
 strip_id_or_class: powa-blurb-wrapper
 strip_id_or_class: hide-for-print
+strip_id_or_class: sr-only
 
 strip: //svg
 
