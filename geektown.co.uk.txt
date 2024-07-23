@@ -1,0 +1,4 @@
+strip_id_or_class: post-related
+strip_id_or_class: post-pagination
+strip_id_or_class: pcrlt-style-1
+strip_id_or_class: sidebar
