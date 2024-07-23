@@ -9,6 +9,12 @@ replace_string: <div>
 find_string: </noscript>
 replace_string: </div>
 
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' c-entry-group-labels ')]
+strip: //p[contains(concat(' ',normalize-space(@class),' '),' c-group-discolure-ecomm__text ')]
+strip: //aside[contains(concat(' ',normalize-space(@class),' '),' c-opinion-flag ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' c-social-buttons--popover ')]
+
 strip: //label
 strip_id_or_class: toc
 
