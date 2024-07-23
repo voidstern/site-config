@@ -1,0 +1,3 @@
+strip_id_or_class: nav
+strip_id_or_class: post-info
+strip_id_or_class: logo
