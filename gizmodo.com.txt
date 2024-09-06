@@ -14,6 +14,7 @@ strip_id_or_class: js_ad-dynamic
 strip_id_or_class: js_ad-mobile-dynamic
 strip_id_or_class: ad-mobile-dynamic
 strip_id_or_class: advertisement
+strip_id_or_class: post-bottom
 
 # [FTR] Stripping normally script-hidden div to prevent cutting article after 1st paragraph
 strip: //div[contains(@class,'sc-1needdh-')]

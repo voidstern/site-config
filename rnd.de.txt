@@ -1,4 +1,5 @@
 body: //article/div[contains(concat(' ',normalize-space(@class),' '),' a__in ')]
+title: //h2[contains(concat(' ',normalize-space(@class),' '),' btRDxK ')]
 
 strip_id_or_class: a__rel-a-li
 strip_id_or_class: ord--0

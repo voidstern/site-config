@@ -3,6 +3,7 @@
 # Source: https://siteconfig.fivefilters.net/grab.php?url=https%3A%2F%2Fwww.dualshockers.com%2Fresident-evil-4-remake-rocket-launcher-location%2F
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' content-block-regular ')]
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' article-header-title ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' w-table-content ')]
 strip_id_or_class: related-single
 

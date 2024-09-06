@@ -15,6 +15,7 @@ strip: //div[@data-area='paywall']
 
 # Remove video with lots of inner tags
 strip_id_or_class: jwplayer
+strip_id_or_class: feature-bar
 strip: //div[@data-component="JWPlayer"]
 
 # Remove lazy-loaded imags (old method)
