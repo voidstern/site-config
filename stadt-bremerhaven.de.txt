@@ -1,4 +1,4 @@
-body: //div[@class='entry-inner']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
 
 # Remove lazy-loaded image tags, favouring image in <noscript> elements
 replace_string(<noscript>): <!-- noscript -->
@@ -6,6 +6,15 @@ replace_string(</noscript>): <!-- /noscript -->
 strip: //img[contains(concat(" ", normalize-space(@class), " "), " jetpack-lazy-image ")]
 
 strip: //div[@class='aawp']
+strip: //ul[@id='shr-btns']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' author-bio ')]
+strip: //h4[contains(concat(' ',normalize-space(@class),' '),' recent-posts__heading ')]
+strip: //ul[contains(concat(' ',normalize-space(@class),' '),' recent-posts ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' widget_polls-widget ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' widget_alx_tabs ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' widget_block ')]
+strip: //div[@id='comments']
+
 strip_id_or_class: aawp-disclaimer
 strip_id_or_class: su-posts
 strip_id_or_class: wp-embedded-content
