@@ -6,7 +6,19 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
 strip_id_or_class: disclaimer-affiliate
 strip_id_or_class: ad-disclaimer-container
 strip_id_or_class: google-news-link
+strip_id_or_class: article__meta-guides
+strip_id_or_class: post-meta
+strip_id_or_class: article__youtube-video
+strip_id_or_class: comments
+strip_id_or_class: h-read-also
+strip_id_or_class: related-guides
+strip_id_or_class: author-bio
+strip_id_or_class: author-bio-container
+strip_id_or_class: container
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' fs-sm ')]
 strip: //p[preceding::hr]/span[@class="embed-youtube"]
 strip: //hr
+strip: //ul[contains(concat(' ',normalize-space(@class),' '),' wp-block-list ')]
 
 test_url: https://9to5mac.com/2024/07/25/fortnites-iphone-relaunch-is-coming-soon-to-the-eu-including-on-altstore/
