@@ -94,6 +94,7 @@ strip_id_or_class: article__nextread nextread-base is-centered
 strip_id_or_class: js-comments
 strip_id_or_class: article__pagination is-constrained is-centered
 strip_id_or_class: article__head__meta
+strip_id_or_class: skiplink
 
 test_url: http://www.zeit.de/zeit-magazin/2015/51/daisy-ridley-traum
 test_contains: Mein ganzes Leben lang habe
