@@ -1,0 +1,4 @@
+body: //div[contains(@class, 'wp-block-column')]
+strip_id_or_class: has-background
+strip_id_or_class: is-vertical
+test_url: https://www.themonstersknow.com/maelephant-tactics/
