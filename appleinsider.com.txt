@@ -6,7 +6,7 @@ author: //p[contains(@class, 'byline')]/a
 
 date: //p[contains(@class, 'date-header')]
 
-body: //div[@class="article"]
+body: //div[@class="article-body"]
 strip_id_or_class: lazy
 #strip_id_or_class: minor
 strip_id_or_class: multipagefooter
