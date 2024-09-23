@@ -40,6 +40,7 @@ strip: //gu-island
 strip: //figure//button
 
 title: //h1[@articleprop='headline']
+title: //main//h1
 author: //a[@rel='author']
 date: //article//time/@datetime
 strip: //article//div[contains(@class, 'content__meta-container')]
