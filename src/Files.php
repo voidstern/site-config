@@ -10,9 +10,9 @@ class Files
      * Get txt files from many directories.
      * And load them in an array (filename => filepath).
      *
-     * @param array $dirs List of directories
+     * @param array<string> $dirs List of directories
      *
-     * @return array
+     * @return array<string, string>
      */
     public static function getFiles($dirs = array())
     {
