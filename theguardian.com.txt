@@ -1,4 +1,3 @@
-body: //figure[.//picture[@itemProp="contentUrl"]] | //div[contains(@class, 'article-body')]
 strip: //article//div[contains(@class, 'content__secondary-column')]
 strip: //aside
 strip: //article//div[contains(@class, 'block-share')]
