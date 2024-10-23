@@ -19,6 +19,5 @@ strip_id_or_class: container
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' fs-sm ')]
 strip: //p[preceding::hr]/span[@class="embed-youtube"]
 strip: //hr
-strip: //ul[contains(concat(' ',normalize-space(@class),' '),' wp-block-list ')]
 
 test_url: https://9to5mac.com/2024/07/25/fortnites-iphone-relaunch-is-coming-soon-to-the-eu-including-on-altstore/

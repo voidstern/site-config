@@ -1,4 +1,4 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' csc-textpic-text ')]
+body: //div[@id="content"]
 
 strip_id_or_class: introa_form
 strip_id_or_class: ttcl_1
