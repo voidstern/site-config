@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'articlebody')]
+
+strip_id_or_class: gray-wrapper
+
+test_url: https://www.topspeed.sk/novinky/cina-sa-za-dodatocne-cla-na-jej-elektromobily-pomsti-adresne-trestat-chce-tieto-staty-/25841
