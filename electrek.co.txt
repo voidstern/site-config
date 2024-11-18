@@ -3,5 +3,11 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' post-body ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' fluid-width-video-wrapper ')]/iframe[@title='Recent Videos']
 strip_id_or_class: ad-disclaimer-container
 strip_id_or_class: after_disclaimer_placement
+strip_id_or_class: wp-block-list
+strip_id_or_class: h-source-links
+strip_id_or_class: featured-items
+strip_id_or_class: related-guides
+strip_id_or_class: author-bio
+strip_id_or_class: author-bio-container
 
 test_url: https://electrek.co/2018/12/06/tesla-battery-report/
