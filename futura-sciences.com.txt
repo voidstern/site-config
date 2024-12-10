@@ -1,4 +1,6 @@
+body: //div[@id="article-anchor-article-main-content"]
 body: //section[contains(concat(' ',normalize-space(@class),' '),' article-text ')]
+title: //h1[@id="article-title"]
 
 strip_id_or_class: ficheprevnext
 strip_id_or_class: bar
@@ -13,6 +15,7 @@ strip_id_or_class: bg-light-green
 strip_id_or_class: breadcrumb
 strip_id_or_class: article-sidebar
 strip_id_or_class: short-article-description
+strip_id_or_class: article-summary
 # Strip links to other articles (despite the quite generic name)
 strip_id_or_class: paragraph
 

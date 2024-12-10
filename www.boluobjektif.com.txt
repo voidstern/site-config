@@ -1,0 +1,12 @@
+body://div[@class='newsDetail']
+date://div[@class='fa-calendar']
+title:/div[@class='newsDetail']//h1[1]
+
+strip_id_or_class: haber-etiketler
+strip_id_or_class: boxTitle
+strip_id_or_class: box
+strip_id_or_class: newsComment
+strip_id_or_class: dikey-haberler
+strip: //form
+
+test_url: https://www.boluobjektif.com/haber/toggun-taksimetre-sorunu-cozuldu/20383/

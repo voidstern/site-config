@@ -1,4 +1,4 @@
-title: //div[@class='HaberDetayTitleHold Title']/h1
+title://h1[contains(@class,'title-actived')]
 body: //div[@id='YazarDetayText']
 author: //div[@class='HaberDetayTitleHold Title']/h1
 prune: no

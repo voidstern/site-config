@@ -1,0 +1,6 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),'title')]
+body: //main//section//article
+strip_id_or_class: article-meta__static-info
+strip_id_or_class: embed-block
+
+test_url: https://www.nu.nl/midden-oostenconflict/6337340/hongersnood-gaza-zo-ernstig-dat-vrouwen-en-kinderen-eten-zoeken-tussen-afval.html

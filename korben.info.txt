@@ -1,6 +1,9 @@
 author: //meta[@name="author"]/@content
+title: //h1[@id="article-title"]
 body: //article[contains(concat(' ',normalize-space(@class),' '),' status-publish ')]//div[contains(concat(' ',normalize-space(@class),' '),' entry-container ')]
+
 strip_id_or_class: post-categories
+strip_id_or_class: sidebar
 
 test_url: https://korben.info/gitcoin-aider-a-financer-les-developpements-open-source-avec-de-lethereum.html
 test_url: https://korben.info/leon-assistant-vocal-siri.html

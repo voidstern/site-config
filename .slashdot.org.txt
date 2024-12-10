@@ -1,6 +1,5 @@
 title: //span[starts-with(@id, 'title-')]
-
-body: //div[starts-with(@id, 'fhbody-')]
+body: //article//div[contains(@class, 'body')]
 
 prune: no
 tidy: no
