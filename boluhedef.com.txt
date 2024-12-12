@@ -1,0 +1,2 @@
+body: //div[@itemprop='articleBody']
+test_url: https://boluhedef.com/haber/zorunlu-trafik-sigortasi-vatandasi-zora-soktu
