@@ -1,0 +1,5 @@
+body: //div[contains(@class, 'wp-block-gamurs-article-content')]
+author: //div[contains(@class, 'wp-block-gamurs-article-metadata__name')]
+strip: //iframe
+
+test_url: https://www.themarysue.com/everyone-relax-thats-not-who-you-think-it-is-in-the-28-years-later-trailer/
