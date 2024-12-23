@@ -1,0 +1,3 @@
+body: //div[contains(@class, 'beyazkutu')]
+
+test_url: https://www.bolusporluyuz.com/haber/oularenin-futbolu-tartisiliyor

@@ -1,0 +1,4 @@
+body: //div[contains(@class, 'contenttext')]
+strip_id_or_class: jp-relatedposts
+
+test_url: https://osxdaily.com/2024/12/16/disable-mail-categories-inbox-iphone/

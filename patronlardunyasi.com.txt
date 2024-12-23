@@ -1,0 +1,6 @@
+include_id_or_class: selectionShareable
+strip_id_or_class: Sidebar
+strip_id_or_class: lg:sticky
+body: //article
+
+test_url: https://www.patronlardunyasi.com/suriyedeki-61-yillik-baas-rejimi-coktu-esad-donemi-resmen-sona-erdi
