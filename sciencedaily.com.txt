@@ -1,0 +1,9 @@
+body: //main
+
+strip_id_or_class: related_releases
+strip_id_or_class: hr-fullstory
+strip_id_or_class: fullstory
+strip_id_or_class: clearfix
+strip_id_or_class: head
+
+https://www.sciencedaily.com/releases/2025/01/250127162040.htm
