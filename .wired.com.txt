@@ -1,4 +1,5 @@
-# Images are not loaded, because they are not relative to www.wired.com as claimed in src field of <img>
+# experimental config
+# spcial caracters don't show properly
 
 body: //div[contains(concat(' ',normalize-space(@class),' '),' ArticlePageContentBackGround-cNiFNN ')]
 body: //div[@id='container']
@@ -8,5 +9,5 @@ strip: //div[contains(@class, 'RecircMostPopularWrapper')]
 # [wallabag]: activate sub-headings
 prune: no
 
-test_url: https://www.wired.com/story/tiktok-platforms-cory-doctorow/
-test_contains: they are good to their users
+# original content for https://www.wired.com/2014/09/coupland-bell-labs/
+test_url: https://interactive.wired.com/www-wired-com__2014__09__coupland-bell-labs/index.html
