@@ -47,6 +47,7 @@ strip_id_or_class: header-teaser__image-details
 strip_id_or_class: tik4-sharing
 strip: //aside[contains(concat(' ',normalize-space(@class),' '),' btn ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' meta2 ')]
+strip: //footer
 
 # Remove tracking and ads
 strip_image_src: /l.gif?
@@ -68,6 +69,7 @@ strip_id_or_class: IndexTitel
 strip_id_or_class: cbx-Author-is-in-article-container-info
 strip_id_or_class: BigBox
 strip_id_or_class: upper-toolbar
+strip_id_or_class: print:hidden
 
 # Fix picture caps and pictures (use better resolution and remove clutter)
 strip_id_or_class: LightBoxOverlay
