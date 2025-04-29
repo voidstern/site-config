@@ -1,10 +1,36 @@
-date: //time[contains(@class, 'article__date published')]/@datetime
+title: //h2[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')]
 body: //div[contains(@class, 'article__body__content')]
+date: //time[contains(@class, 'article__date published')]/@datetime
 
-prune: no
-
-strip_id_or_class: newsletter-signup
-strip_id_or_class: pullquote
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' czMzUM ')]
+strip: //p[contains(concat(' ',normalize-space(@class),' '),' glDrug ')]
+strip: //span[contains(concat(' ',normalize-space(@class),' '),' font-mono ')]
 strip_id_or_class: article__shares
+strip_id_or_class: czMzUM
+strip_id_or_class: dWtybc
+strip_id_or_class: foUHod
+strip_id_or_class: font-semibold
+strip_id_or_class: font-serif
+strip_id_or_class: gFjSjq
+strip_id_or_class: jrWkjX
+strip_id_or_class: leading-none
+strip_id_or_class: max-[767px]:text-black
+strip_id_or_class: max-[767px]:text-left
+strip_id_or_class: max-[960px]:text-[42px]
+strip_id_or_class: mb-6
+strip_id_or_class: min-[768px]:mt-11
+strip_id_or_class: mt-2.5
+strip_id_or_class: newsletter-signup
+strip_id_or_class: print:text-4xl
+strip_id_or_class: pullquote
+strip_id_or_class: sc-3686185f-11
+strip_id_or_class: sc-809612e0-0
+strip_id_or_class: sc-c83e4c92-0
+strip_id_or_class: sc-d0d42ecb-6
+strip_id_or_class: text-7xl
+strip_id_or_class: toggleMobileCreditBtn
+
+prune: false
 
 test_url: https://aeon.co/essays/how-did-creativity-become-an-engine-of-economic-growth
+test_url: https://aeon.co/essays/when-ais-do-science-it-will-be-strange-and-incomprehensible
