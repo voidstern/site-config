@@ -1,0 +1,12 @@
+title: //article[@id='ContentPlaceHolder1_SynMtnNewsArticle']//header//h1
+body: //main[@id='content']
+
+strip: //h2[@id='idKommentieren']
+strip: //h3[contains(concat(' ',normalize-space(@class),' '),' SynMessageNote ')]
+strip_id_or_class: contentempfehlen
+strip_id_or_class: contentempfehlen2
+strip_id_or_class: divPushOrNotPush
+
+
+test_url: https://www.mactechnews.de/news/article/Apple-AirPort-Petition-fordert-Behebung-von-kritischen-Sicherheitsluecken-187099.html
+test_url: https://www.mactechnews.de/news/article/Huawei-Chef-Apple-ist-mein-Lehrer-172462.html

@@ -1,18 +1,24 @@
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' h1 ')]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
 
+strip: //div[@id='content']//div[contains(concat(' ',normalize-space(@class),' '),' container ') and (contains(concat(' ',normalize-space(@class),' '),' med ')) and (contains(concat(' ',normalize-space(@class),' '),' left '))]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' fluid-width-video-wrapper ')]/iframe[@title='Recent Videos']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' top-comment ')]
 strip: //figure[contains(concat(' ',normalize-space(@class),' '),' wp-block-image ')]//a//img
+strip: //hr[contains(concat(' ',normalize-space(@class),' '),' wp-block-separator ')]
+strip: //section[@id='comments']
 strip_id_or_class: ad-disclaimer-container
 strip_id_or_class: after_disclaimer_placement
-strip_id_or_class: wp-block-list
-strip_id_or_class: h-source-links
-strip_id_or_class: featured-items
-strip_id_or_class: related-guides
 strip_id_or_class: author-bio
 strip_id_or_class: author-bio-container
+strip_id_or_class: featured-items
 strip_id_or_class: google-news-link
+strip_id_or_class: h-source-links
+strip_id_or_class: openweb-comments
+strip_id_or_class: related-guides
+strip_id_or_class: wp-block-list
 
 
 test_url: https://electrek.co/2018/12/06/tesla-battery-report/
 test_url: https://electrek.co/2025/02/19/heliene-origami-solar-trump-tariffs/
+test_url: https://electrek.co/2025/04/25/global-energy-giant-rwe-halts-us-offshore-wind-because-of-trump/

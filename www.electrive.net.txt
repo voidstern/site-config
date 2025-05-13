@@ -1,0 +1,10 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' heading ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' posts__single__tags ')]//h3[contains(concat(' ',normalize-space(@class),' '),' title ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' posts__single__tags ')]//ul[contains(concat(' ',normalize-space(@class),' '),' tags ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' topline ')]//div[contains(concat(' ',normalize-space(@class),' '),' posts__meta ')]
+strip: //h1[contains(concat(' ',normalize-space(@class),' '),' heading ')]
+strip_id_or_class: next-reads
+
+
+test_url: https://www.electrive.net/2025/04/26/erster-ladepark-an-landesstrasse-in-baden-wuerttemberg-in-betrieb/

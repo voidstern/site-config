@@ -1,0 +1,6 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' post-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' text-content ')]
+
+
+
+test_url: https://www.35mmc.com/04/05/2025/spring-into-summer-bluebells-and-poppies-on-film-fujifilm-nph400-fujichrome-velvia-50-agfachrome-rsx-ii-200/
