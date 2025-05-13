@@ -1,0 +1,6 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' news-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' news-content ')]
+
+web_view_load: true
+
+test_url: https://www.trthaber.com/haber/turkiye/bitliste-23-arac-birbirine-girdi-31-yarali-890855.html

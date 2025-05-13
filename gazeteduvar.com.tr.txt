@@ -1,0 +1,8 @@
+strip: //figcaption
+strip_id_or_class: google-news_wrapper
+strip_id_or_class: tags
+
+prune: true
+web_view_load: false
+
+test_url: https://www.gazeteduvar.com.tr/edirne-belediye-baskani-filiz-gencan-akin-tehdit-ediliyorum-haber-1740211

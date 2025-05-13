@@ -19,10 +19,26 @@ strip_id_or_class: footer
 strip: //img[contains(@src, '/mail/icon_link')]
 strip: //table[@class="link-tile"]/@height
 strip: //table[@class="link-tile"]/@style
+strip_id_or_class: contact-module
+strip_id_or_class: footer
 strip_id_or_class: spacer
+strip_id_or_class: topic-module
 
 prune: no
 tidy: no
+find_string: <table
+replace_string: <div
 
-test_url: https://www.hessen.de/newsletter-feed
+find_string: <tbody
+replace_string: <div
+
+find_string: <td
+replace_string: <div
+
+find_string: <tr
+replace_string: <div
+
+
 test_url: https://hessen.de/node/10963/newsletter-preview
+test_url: https://hessen.de/node/18572/newsletter-preview
+test_url: https://www.hessen.de/newsletter-feed
