@@ -1,0 +1,12 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-entry ')]
+
+strip: //div[@id='blog_follow']
+strip: //div[@id='respond']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' robots-nocontent ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' widget_search ')]
+strip: //h6[@id='comments']
+strip_id_or_class: comment-body
+
+
+test_url: https://www.aftvnews.com/google-is-skipping-android-tv-15-and-jumping-straight-to-android-tv-16-for-its-next-release/

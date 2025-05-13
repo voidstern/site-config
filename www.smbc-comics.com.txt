@@ -1,0 +1,15 @@
+title: //div[contains(concat(' ',normalize-space(@class),' '),' cc-newsheader ')]
+body: //*[@id="cc-comicbody"] | //*[@id="aftercomic"]
+
+
+find_string: <img src
+replace_string: <div/><img src
+
+find_string: display:none
+replace_string: display:inline
+
+tidy: false
+prune: false
+
+test_url: http://www.smbc-comics.com/index.php?id=2039
+test_url: https://www.smbc-comics.com/comic/mad
