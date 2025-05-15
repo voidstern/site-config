@@ -1,0 +1,21 @@
+title: //meta[@name="og:title"]/@content
+body: //div[@class="sz-article__top-asset"] | //div[contains(concat(' ', normalize-space(@class), ' '), ' sz-article__body ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-content ')]
+author: //meta[@name="author"]/@content
+date: //time
+
+strip: //figcaption
+strip: //noscript
+strip_id_or_class: css-oo0q1r
+strip_id_or_class: sz-image-asset__zoom-icon
+strip_id_or_class: teaserable-layout
+
+replace_string(</h2>): </h3>
+replace_string(<h2>): <h3>
+tidy: no
+prune: no
+
+test_url: http://www.sueddeutsche.de/kultur/politik-und-philosophie-warum-trump-jedes-mittel-recht-ist-1.3256078
+test_url: http://www.sueddeutsche.de/muenchen/mietshaus-am-gaertnerplatz-alles-muss-raus-1.1556693
+test_url: http://www.sueddeutsche.de/reise/bergwinter-saisonstart-in-den-skigebieten-geht-schon-1.3251799
+test_url: https://www.sueddeutsche.de/medien/guttenberg-gysi-maischberger-wissing-li.3217508
