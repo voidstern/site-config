@@ -1,5 +1,6 @@
 single_page_link: //div[@id='ss-storyText']//p[@class='readMore']/a
 single_page_link: //div[@id='ss-storyText']//p[contains(., 'Mehr dazu')]/a
+single_page_link: //div[@id='ss-storyText']//p[contains(., 'Lesen Sie mehr)]/a
 
 title: substring-before(//title,' - ')
 body: //div[@id="ss-storyText"]
