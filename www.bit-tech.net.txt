@@ -3,7 +3,7 @@ body: //div[@id='column_1']
 body: //div[@id='page_body']
 author: substring-after(//p[@class='byline'], 'by ')
 date: substring-before(substring-after(//p[@class='byline'], 'on '), ' by')
-next_page_link: //a[descendant::button[@class='next_button']]
+next_page_link: //div[@class='next']/a[not(contains(@href, '/comments') or contains(@href, '/news/'))]
 
 strip: //h1
 strip_id_or_class: articleTabs

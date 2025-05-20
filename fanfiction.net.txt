@@ -1,6 +1,12 @@
+title: //b[contains(concat(' ',normalize-space(@class),' '),' xcontrast_txt ')]
 body: //*[@id = 'story text']
+body: //div[@id='storytext']
 author: //a[starts-with(@href, '/u/')]
 next_page_link: substring-after(//input[contains(@value, 'Next')]/@onclick, "self.location='")
-autodetect_next_page:yes
+
 strip_id_or_class: 'a2a_kit'
+
+web_view_load: yes
+
 test_url: http://www.fanfiction.net/s/6497403/1/Spartan_Love
+test_url: https://www.fanfiction.net/s/6497403/1/Spartan_Love
