@@ -1,10 +1,13 @@
 body: //main
-strip: //nav
-strip: //*[@aria-hidden="true"]
 
-# strip additional header-line in text
+strip: //*[@aria-hidden="true"]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' grid ') and (contains(concat(' ',normalize-space(@class),' '),' rounded-md '))]
 strip: //main/text()
+strip: //nav
+strip_id_or_class: group
 
 prune: no
+web_view_load: yes
 
 test_url: https://openai.com/index/learning-to-reason-with-llms/
+test_url: https://openai.com/index/ten-tiny-canvases/

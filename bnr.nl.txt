@@ -1,0 +1,9 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' leading-normal ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' articleContent')]
+
+strip_id_or_class: ReadMoreV2_read-more-v2__fpzJV
+strip_id_or_class: s__p+4
+
+web_view_load: yes
+
+test_url: https://www.bnr.nl/nieuws/economie/10569681/beleggers-gewaarschuwd-amerikaanse-aandelen-zullen-nog-verder-dalen

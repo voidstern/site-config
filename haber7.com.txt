@@ -1,0 +1,8 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' news-content ')]
+
+strip_id_or_class: news-comment-section
+strip_id_or_class: news-related-box
+
+
+test_url: https://www.haber7.com/teknoloji/haber/3517157-demir-yollari-akillaniyor-arizalari-ortaya-cikmadan-tespit-ediyor

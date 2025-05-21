@@ -1,0 +1,8 @@
+title: //div[@id='div_postbody']
+body: //div[@id='div_postbody']
+author: //a[contains(concat(' ',normalize-space(@class),' '),' author ')]
+
+
+web_view_load: yes
+
+test_url: https://mosaik-blog.at/deutsche-waffen-deutsches-geld-wo-bleibt-der-widerstand/

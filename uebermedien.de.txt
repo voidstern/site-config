@@ -1,0 +1,9 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry__title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry__content ')]
+
+strip_id_or_class: entry-content-info-box
+strip_id_or_class: full
+
+web_view_load: yes
+
+test_url: https://uebermedien.de/104048/note-mangelhaft-die-probleme-mit-online-produktvergleichen/

@@ -1,0 +1,6 @@
+body: //article[@id='infinity-container']
+
+
+web_view_load: yes
+
+test_url: https://www.medyaradar.net/ibb-baskani-imamoglunun-diplomasi-iptal-edildi-fotogaleri-2198417

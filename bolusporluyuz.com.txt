@@ -1,3 +1,7 @@
 body: //div[contains(@class, 'beyazkutu')]
 
+
+web_view_load: yes
+
+test_url: http://www.bolusporluyuz.com/haber/boluspor-sanliurfaspor-deplasmaninda-zorlu-bir-sinav-verecek
 test_url: https://www.bolusporluyuz.com/haber/oularenin-futbolu-tartisiliyor

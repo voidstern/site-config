@@ -1,0 +1,6 @@
+title: //header[contains(concat(' ',normalize-space(@class),' '),' bt_bb_superheadline ')]//h1[contains(concat(' ',normalize-space(@class),' '),' bt_bb_headline_tag ')]//span[contains(concat(' ',normalize-space(@class),' '),' bt_bb_headline_content ')]//span
+
+
+web_view_load: yes
+
+test_url: https://www.dodho.com/staged-still-life-lanie-kleins-photographic-exploration-of-women-and-objectification-in-art/
