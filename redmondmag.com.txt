@@ -1,0 +1,11 @@
+title: //h3[@id='ph_pcontent2_0_MainHeading']
+body: //div[@id='article']
+author: //li[contains(concat(' ',normalize-space(@class),' '),' author ')]//a
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' aboutAuthor ')]
+strip: //h3[@id='ph_pcontent2_0_MainHeading']
+strip: //p[@id='ph_pcontent2_0_KickerText']
+strip: //ul[@id='ph_pcontent2_0_ByAuthor']
+
+
+test_url: https://redmondmag.com/Articles/2025/04/08/Microsoft-Announces-Azure-AI-with-Copilot-GA-and-Meta-Llama-4-Integration.aspx

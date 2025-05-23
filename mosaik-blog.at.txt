@@ -1,7 +1,15 @@
 title: //div[@id='div_postbody']
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
 body: //div[@id='div_postbody']
+body: //div[contains(concat(' ',normalize-space(@class),' '),' ast-post-format- ')]//div[contains(concat(' ',normalize-space(@class),' '),' entry-content ') and (contains(concat(' ',normalize-space(@class),' '),' clear '))]
 author: //a[contains(concat(' ',normalize-space(@class),' '),' author ')]
 
+strip_id_or_class: author_index_0
+strip_id_or_class: author_thomaswaimer
+strip_id_or_class: has-avatar
+strip_id_or_class: is-image-fill-element
+strip_id_or_class: is-stacked-on-mobile
+strip_id_or_class: pp-multiple-authors-boxes-li
 
 web_view_load: yes
 

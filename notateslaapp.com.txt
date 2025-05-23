@@ -1,0 +1,9 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content ')]
+
+strip_id_or_class: mod-latest-news
+strip_id_or_class: mod-list-versions
+strip_id_or_class: mod-update-overview
+include_id_or_class: mod-update-feature
+
+
+test_url: https://www.notateslaapp.com/tesla-app-updates/version/4.44.0/release-notes

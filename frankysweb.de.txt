@@ -1,0 +1,8 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+
+strip: //h3[contains(concat(' ',normalize-space(@class),' '),' jp-relatedposts-headline ')]
+strip: //iframe[@id='aswift_1']
+
+
+test_url: https://www.frankysweb.de/stalledduetosource_disklatency-bei-exchange-moverequests/

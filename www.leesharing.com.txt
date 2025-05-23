@@ -1,0 +1,7 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' inside-article ')]
+
+
+web_view_load: yes
+
+test_url: https://www.leesharing.com/swisse-0425/

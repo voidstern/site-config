@@ -1,0 +1,13 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' H3vOVf ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' L5x0Fp ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' consent-banner')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' consent-banner-root-container ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' eFSltK ')]
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' oY1ew3 ')]
+strip_id_or_class: viewer-duqg68356
+
+web_view_load: yes
+
+test_url: https://www.tvzoneuk.com/post/doctorwho-overnightratings-therobotrevolution
+test_url: https://www.tvzoneuk.com/post/theweakestlink-s5repann1

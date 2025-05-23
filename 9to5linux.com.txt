@@ -1,0 +1,25 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' h1 ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' fs-sm ')]
+author: //span[contains(concat(' ',normalize-space(@class),' '),' author-name ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' fs-sm ')]
+strip: //h1[contains(concat(' ',normalize-space(@class),' '),' h1 ')]
+strip: //hr
+strip: //p[preceding::hr]/span[@class="embed-youtube"]
+strip_id_or_class: ad-disclaimer-container
+strip_id_or_class: after_disclaimer_placement
+strip_id_or_class: article__meta-guides
+strip_id_or_class: article__youtube-video
+strip_id_or_class: author-bio
+strip_id_or_class: author-bio-container
+strip_id_or_class: comments
+strip_id_or_class: container
+strip_id_or_class: disclaimer-affiliate
+strip_id_or_class: google-news-link
+strip_id_or_class: h-read-also
+strip_id_or_class: post-meta
+strip_id_or_class: related-guides
+
+
+test_url: https://9to5linux.com/lxqt-2-2-desktop-environment-released-with-many-wayland-improvements

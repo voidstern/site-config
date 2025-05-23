@@ -1,13 +1,16 @@
-date: //meta[@name='publish-date']/@content
+body: //div[@id='StoryGrid']
 body: //div[contains(@class, 'articleContentWrapper')]
-prune: no
+date: //meta[@name='publish-date']/@content
 
 strip: //div[contains(@class, 'staff_info')]//dd[contains(., 'Twitter')]
-
-strip_id_or_class: related_content
 strip_id_or_class: enlarge
-strip_id_or_class: photoBy
 strip_id_or_class: older
+strip_id_or_class: photoBy
+strip_id_or_class: related_content
 
-test_url: http://www.bizjournals.com/cincinnati/news/2013/10/03/harris-teeter-shareholders-vote-on.html
+prune: no
+web_view_load: yes
+
 test_url: http://feeds.bizjournals.com/industry_20?format=xml
+test_url: http://www.bizjournals.com/cincinnati/news/2013/10/03/harris-teeter-shareholders-vote-on.html
+test_url: https://www.bizjournals.com/sacramento/news/2025/04/25/uptown-studios-building-sold-school-rock.html?ana=RSS&s=article_search

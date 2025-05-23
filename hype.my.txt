@@ -1,0 +1,7 @@
+body: //div[contains(@class, 'entry-content')]
+
+strip_id_or_class: jeg_post_tags
+
+web_view_load: no
+
+test_url: https://hype.my/2025/465824/video-lrt3-engineer-gives-a-rare-behind-the-scenes-look-at-nearly-complete-station/

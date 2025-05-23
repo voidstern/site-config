@@ -1,0 +1,6 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post')]
+
+
+test_url: https://thefemin.com/2025/04/gentle-monster-custom-eyewear-for-g-dragon/
+test_url: https://thefemin.com/2025/05/ikea-stockholm-2025/
