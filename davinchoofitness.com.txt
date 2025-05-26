@@ -1,0 +1,6 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' H3vOVf ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' HW6ttf ')]
+
+
+
+test_url: https://www.davinchoofitness.com/post/copy-of-how-branson-lost-10kg-in-2-month-without-a-gym-membership

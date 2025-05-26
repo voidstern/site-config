@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' JdVll ')]
+
+
+
+test_url: https://www.refinedpoints.com/post/cimb-travel-world-elite-vs-maybank-world-elite-mastercard
