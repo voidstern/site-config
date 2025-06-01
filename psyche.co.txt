@@ -1,13 +1,25 @@
+http_header(User-Agent): Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
+
+body: //main[1]
+title: substring-before(//meta[@property="og:title"]/@content , ' | Psyche')
 title: //meta[@property="og:title"]/@content
 date: //div[contains(@class, 'guides__PublishedDate')]
 body: //div[@id='articleContent']
 
-strip: //*[contains(@class, 'styled__Sidebar)]
-strip: //*[contains(@class, 'styled__GuideNav)]
-strip: //*[contains(@class, 'SocialMetaWrapper')]
+strip: //aside
 strip: //button
-strip: //div[contains(@class, 'styled__GuideNav')]
+strip: //header//h1
+strip: //div[@id='authorBio']/parent::div
+
+strip: //div[@aria-label="Topics"]/self::div | //div[@aria-label="Topics"]/following-sibling::*
+strip: //main[1]/div[1]/div[last()]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' hidden ')] 
+strip: //a[contains(@href, '/syndication')]
+
+prune: no
 strip_id_or_class: SidebarWrapper
+tidy: no
 
 test_url: https://psyche.co/ideas/why-are-tiger-parents-willing-to-trade-love-for-success?utm_source=rss-feed
 test_contains: When I was in eighth grade, my mom sat down with me to explain the grave nature of the situation
+test_url: https://psyche.co/ideas/how-do-good-conversations-work-philosophy-has-something-to-say
