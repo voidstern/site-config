@@ -1,5 +1,6 @@
 title: //h2[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')]
 body: //div[contains(@class, 'article__body__content')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' eObytK ')]
 date: //time[contains(@class, 'article__date published')]/@datetime
 
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' czMzUM ')]
@@ -30,7 +31,8 @@ strip_id_or_class: sc-d0d42ecb-6
 strip_id_or_class: text-7xl
 strip_id_or_class: toggleMobileCreditBtn
 
-prune: false
+prune: no
 
 test_url: https://aeon.co/essays/how-did-creativity-become-an-engine-of-economic-growth
 test_url: https://aeon.co/essays/when-ais-do-science-it-will-be-strange-and-incomprehensible
+test_url: https://aeon.co/essays/william-herschels-sensors-let-us-see-the-invisible-universe
