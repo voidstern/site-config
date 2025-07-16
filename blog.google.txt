@@ -1,13 +1,17 @@
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' article-hero__h1 ')]
+date: //p[contains(concat(' ',normalize-space(@class),' '),' article-meta__published-at ')]
+author: //meta[@name="article-author"]/@content
+author: //div[contains(concat(' ',normalize-space(@class),' '),' article-meta__author-name ')]
 
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' article-meta__author-wrapper ')]
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' article-meta__container ')]
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' uni-related-articles-cards__title-content ')]
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' uni-related-articles-cards__wrap ')]
-strip: //h1[contains(concat(' ',normalize-space(@class),' '),' article-hero__h1 ')]
-strip: //section[contains(concat(' ',normalize-space(@class),' '),' h-c-footer__upper ')]
-strip: //span[contains(concat(' ',normalize-space(@class),' '),' uni-blog-article-tags__label ')]
-strip_id_or_class: uni-header__newsletter
+body: //div[contains(concat(' ',normalize-space(@class),' '),' uni-content ')] | //div[@class='article-image-hero']
 
+find_string: .width-100.format-
+replace_string: .width-1000.format-
 
-test_url: https://blog.google/products/google-lens/lens-on-ios-ai-overviews/
+find_string: .width-200.format-
+replace_string: .width-2200.format-
+
+prune: no
+tidy: no
+
+test_url: https://blog.google/products/android/android-16/
