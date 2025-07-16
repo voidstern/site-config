@@ -1,0 +1,18 @@
+title: //h1[@class="art-head"]
+body: //div[@class="article-body"]
+author: //p[contains(@class, 'byline')]/a
+date: //p[contains(@class, 'date-header')]
+
+strip_id_or_class: byline
+strip_id_or_class: date-header
+strip_id_or_class: lazy
+strip_id_or_class: multipagefooter
+
+replace_string(</noscript>): </div>
+replace_string(<noscript>): <div>
+web_view_load: yes
+
+test_url: http://appleinsider.com/appleinsider.rss
+test_url: http://appleinsider.com/articles/13/10/03/goldee-companion-app-for-philips-hue-bulbs-offers-shifting-dynamic-light-scenes
+test_url: http://www.appleinsider.com/articles/12/02/29/inside_os_x_108_mountain_lion_safari_52_gets_a_simplified_user_interface_with_new_sharing_features.html
+test_url: https://appleinsider.com/articles/25/07/10/airpods-pro-2-and-airpods-4-get-new-beta-firmware?utm_medium=rss
