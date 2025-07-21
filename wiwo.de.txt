@@ -1,10 +1,15 @@
+title: //app-header-content-headline//h2
 title: //h2[@class:'c-headline--article']
-date: //time
-author: //div[@class:'c-metadata']//a[@class='c-link--borderless']
-
+body: //app-storyline-elements[contains(concat(' ',normalize-space(@class),' '),' ng-star-inserted ')]
 body: //div[@class:'o-article__content']
+author: //app-authors[contains(concat(' ',normalize-space(@class),' '),' ng-star-inserted ')]//a[contains(concat(' ',normalize-space(@class),' '),' ng-star-inserted ')]
+author: //div[@class:'c-metadata']//a[@class='c-link--borderless']
+date: //app-story-date
+date: //time
 
-strip_id_or_class: c-standard-article-teaser
 strip_id_or_class: c-socialshare
+strip_id_or_class: c-standard-article-teaser
 
+
+test_url: https://www.wiwo.de/finanzen/steuern-recht/steuererklaerung-abgeben-das-sind-die-besten-steuerberatungen-2025/100141802.html
 test_url: https://www.wiwo.de/unternehmen/auto/klimaschutz-der-green-deal-ist-fuer-daimler-der-horror/25333692.html

@@ -1,0 +1,17 @@
+title: //h1
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+
+strip: //div[@id='aContent']//div[contains(concat(' ',normalize-space(@class),' '),' recArticle ')]
+strip_id_or_class: copyright
+strip_id_or_class: ctl00_ContentPlaceHolder1_m_aComments_m_defaultPNL
+strip_id_or_class: discTrunc
+strip_id_or_class: grow-me-in-content-recs-root
+strip_id_or_class: headline
+strip_id_or_class: links
+strip_id_or_class: mobile
+strip_id_or_class: popular
+strip_id_or_class: recArticle
+strip_id_or_class: social
+
+
+test_url: https://comicbookmovie.com/horror/crystal-lake-jason-voorhees-has-finally-been-cast-in-friday-the-13th-prequel-tv-series-a222872

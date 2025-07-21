@@ -1,0 +1,6 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' tdb-title-text ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' td-pb-span9 ')]//div[contains(concat(' ',normalize-space(@class),' '),' vc_column-inner ')]//div[contains(concat(' ',normalize-space(@class),' '),' wpb_wrapper ')]
+
+
+
+test_url: https://www.magazinhaberleri.com/mobbing-iddiasinda-deniz-ugurdan-mine-tugaya-sert-gonderme/

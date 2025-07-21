@@ -1,0 +1,8 @@
+title: //h1
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content-text ')]
+
+strip_id_or_class: mceNonEditable
+strip_id_or_class: related-news
+
+
+test_url: https://www.odatv.com/guncel/rusyada-100den-fazla-ucus-iptal-edildi-120107600

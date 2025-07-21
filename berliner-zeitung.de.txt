@@ -1,0 +1,12 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' article_articleTitle__Eo_zX ')]
+body: //article
+author: //a[contains(concat(' ',normalize-space(@class),' '),' article_author-name__2tybB ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' breadcrumbs_wrapper__Vq1kW ')]
+strip_id_or_class: soft-paywall_wrapper__vfn8o
+strip_id_or_class: tags-widget_header__EhNe7
+strip_id_or_class: tags-widget_tags-wrapper__6PpBP
+
+web_view_load: yes
+
+test_url: https://www.berliner-zeitung.de/politik-gesellschaft/boris-palmer-ueber-gruene-jugend-nun-endet-die-feindliche-uebernahme-der-partei-li.2257587

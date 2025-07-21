@@ -1,0 +1,9 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' title-semibold-dark ')]
+body: //section[contains(concat(' ',normalize-space(@class),' '),' bg-body ')]
+
+strip_id_or_class: info_bar
+strip_id_or_class: ne-sidebar
+strip_id_or_class: sidebar-break-md
+
+
+test_url: https://www.gecce.com.tr/haber/cansel-elcin-ve-zeynep-tugce-bayat-ogullari-atlasla-bodrum-tatilinde-325011.html

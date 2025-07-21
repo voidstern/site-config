@@ -1,5 +1,7 @@
 title: //h1
+body: //div[@id='news-body']
 body: //div[contains(concat(' ',normalize-space(@class),' '),' section ')]
+date: //time
 
 strip_id_or_class: author
 strip_id_or_class: ellipsize
@@ -9,3 +11,4 @@ strip_id_or_class: total-replies
 
 
 test_url: https://www.elotrolado.net/hilo_rise-of-industry-2-anuncia-su-lanzamiento-para-el-3-de-junio_2518180
+test_url: https://www.elotrolado.net/noticias/internet/zelda-link-actores-pelicula
