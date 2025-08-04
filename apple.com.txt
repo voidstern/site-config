@@ -2,29 +2,19 @@ body: //article[@class='article']
 
 strip: //aside
 strip: //button
-strip: //nav
-
 strip: //div[@class='nr-article-share']/self::div | //div[@class='nr-article-share']/following-sibling::*
-
-strip_id_or_class: featured-header
+strip: //nav
 strip_id_or_class: article-header
+strip_id_or_class: featured-header
+include_id_or_class: image-sharesheet
+include_id_or_class: sharesheet-options-open
 
+replace_string(</video): </div
+replace_string(<div class="video c): <strong>&rarr; <em>Embedded video can not be shown here, open source page to watch</em></strong><div class="foo video c
+replace_string(<video): <div
+replace_string(class="video-container): class="foobar
 prune: no
-
-# embedded videos can't be shown or saved with FTR or wallabag
-# replacing with text hint
-
-find_string: <div class="video c
-replace_string: <strong>&rarr; <em>Embedded video can not be shown here, open source page to watch</em></strong><div class="foo video c
-
-find_string: <video
-replace_string: <div
-find_string: </video
-replace_string: </div
-
-# preventing wallabag's css using 'video-container' class to enlarge heigth, while there is no video anymore
-find_string: class="video-container
-replace_string: class="foobar
 
 test_url: https://www.apple.com/newsroom/2023/10/apple-supercharges-24-inch-imac-with-new-m3-chip/
 test_url: https://www.apple.com/newsroom/2023/10/behind-the-scenes-at-scary-fast-apples-keynote-event-shot-on-iphone/
+test_url: https://www.apple.com/newsroom/2024/10/apple-introduces-powerful-new-ipad-mini-built-for-apple-intelligence/

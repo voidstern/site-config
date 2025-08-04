@@ -1,0 +1,3 @@
+web_view_load: yes
+
+test_url: https://www.kevinmullinsphotography.co.uk/blog/wedding-photography-kevin-mullins

@@ -1,0 +1,8 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' single-title ')]
+
+strip: //form[@id='commentform']
+strip: //h3[@id='reply-title']
+strip_id_or_class: center-align
+
+
+test_url: https://www.goingelectric.de/2025/07/28/news/aral-pulse-neue-schnellladesaeulen-in-woerth-in-betrieb/
