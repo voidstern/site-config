@@ -1,62 +1,83 @@
-title: //meta[@property="og:title"]/@content
-body: //article
-body: //div[@id='zephr-anchor']
 author: //meta[@name="author"]/@content
+title: //meta[@property="og:title"]/@content
 date: //meta[@property="article:published_time"]/@content
 
-strip: //*[@id="content"]/div[1]/ul
-strip: //a[contains(@href, '/pages/how-we-rate')]
+# //picture selector seems to cause problems with text extraction.
+# body: //picture[contains(@class, 'c-picture')] | //div[contains(@class, 'c-entry-content') or contains(@class, 'c-entry-hero__image')]
+body: //div[contains(@class, 'c-entry-content') or contains(@class, 'c-entry-hero__image')]
+# for vergecasts, e.g. http://www.theverge.com/2013/8/22/4648566/the-vergecast-090-august-22th-2013-video
+body: //article
+body: //div[contains(concat(' ',normalize-space(@class),' '),' l-col__main ')]
+
 strip: //aside
-strip: //div[@aria-label="Zoom"]/img
-strip: //div[@id='zephr-anchor']//span//a[contains(concat(' ',normalize-space(@class),' '),' duet--article--comments-link ')]
-strip: //div[contains(@class, 'duet--media--content-warning')]/img
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' _1o1f7ku7 ')]
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' _1p1nf4x0 ')]
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' _1p1nf4x3 ')]
-strip: //div[contains(concat(' ',normalize-space(@class),' '),' grow ')]
-strip: //li[contains(concat(' ',normalize-space(@class),' '),' inline ')]
 strip: //nav
-strip: //span[contains(concat(' ',normalize-space(@class),' '),' tvl9dp3 ')]
-strip_id_or_class: _14e2col0
-strip_id_or_class: _1n017go0
-strip_id_or_class: _1n017go1
-strip_id_or_class: article-meta
-strip_id_or_class: c-related-list
-strip_id_or_class: c-river
-strip_id_or_class: chorus-ad-placement
-strip_id_or_class: comments
-strip_id_or_class: duet--article--article-byline
-strip_id_or_class: duet--article--article-pullquote
-strip_id_or_class: duet--article--date-and-comments
-strip_id_or_class: duet--article--disclaimer
-strip_id_or_class: duet--recirculation--related-list
-strip_id_or_class: e-image__meta
+
 strip_id_or_class: gallery
-strip_id_or_class: hidden
-strip_id_or_class: l-col__sidebar
+strip_id_or_class: article-meta
+strip_id_or_class: story-navigation
+strip_id_or_class: slegend
+strip_id_or_class: related-product-meta
+strip_id_or_class: comments
+strip_id_or_class: ui-jump-list
+strip_id_or_class: pullquote
 strip_id_or_class: m-ad
+strip_id_or_class: social-sharing
+strip_id_or_class: m-video-entry__excerpt
+strip_id_or_class: hidden
 strip_id_or_class: m-article__follow-bar
 strip_id_or_class: m-article__share-buttons
-strip_id_or_class: m-video-entry__excerpt
-strip_id_or_class: pullquote
-strip_id_or_class: related-product-meta
-strip_id_or_class: slegend
-strip_id_or_class: social-sharing
+strip_id_or_class: l-col__sidebar
+strip_id_or_class: c-river
+strip_id_or_class: chorus-ad-placement
+strip_id_or_class: c-related-list
 strip_id_or_class: sr-only
-strip_id_or_class: story-navigation
-strip_id_or_class: ui-jump-list
+# strip follow topics and authors
+strip_id_or_class: tly2fw0
+# strip second version of lead text an lead image
+strip_id_or_class: _1o1f7ku8
+strip_id_or_class: _1ymtmqpm
+# remove query string from images
+replace_string(?quality=90&): " foo="
+#replace_string(?quality=90&): ?quality=90" foo="
 
-replace_string(</noscript>): </div>
-replace_string(<div id="content" class="clearfix">): <div>
-replace_string(<div role="button"): <div
-replace_string(<noscript>): <div>
+
+#2017
+strip_id_or_class: e-image__meta
 replace_string(<strong> </strong>): <!-- nothing -->
-include_images: yes
 
-test_url: http://www.theverge.com/2011/11/3/2534861/nokia-lumia-800-review
+# 2023
+# Categories
+strip: //*[@id="content"]/div[1]/ul
+strip: //li[contains(concat(' ',normalize-space(@class),' '),' inline ')]
+# Author blurb
+strip_id_or_class: duet--article--date-and-comments
+strip_id_or_class: duet--article--disclaimer
+strip_id_or_class: duet--article--article-byline
+# Header divider
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' grow ')]
+# Fix double images
+strip: //div[contains(@class, 'duet--media--content-warning')]/img
+strip: //div[@aria-label="Zoom"]/img
+replace_string(<div role="button"): <div
+# Related list
+strip_id_or_class: duet--recirculation--related-list
+# Pull quote
+strip_id_or_class: duet--article--article-pullquote
+# Indented article
+replace_string(<div id="content" class="clearfix">): <div>
+# Rating disclosures
+strip: //a[contains(@href, '/pages/how-we-rate')]
+
+replace_string(<noscript>): <div>
+replace_string(</noscript>): </div>
+
+parser: html5php
+
+test_url: http://www.theverge.com/2017/1/12/14244634/signal-app-secure-messaging-trump-surveillance-encryption
+test_contains: While he now lives in an Oakland apartment
+
 test_url: http://www.theverge.com/2012/2/29/2821763/lytro-review
+test_url: http://www.theverge.com/2011/11/3/2534861/nokia-lumia-800-review
 test_url: http://www.theverge.com/2013/2/24/4026114/barnes-noble-shifting-focus-away-from-nook-hardware
 test_url: http://www.theverge.com/2014/6/19/5824072/top-shelf-living-the-dream
-test_url: http://www.theverge.com/2017/1/12/14244634/signal-app-secure-messaging-trump-surveillance-encryption
 test_url: http://www.theverge.com/rss/frontpage
-test_url: https://www.theverge.com/news/677560/stranger-things-season-5-premiere-date-trailer
