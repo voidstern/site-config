@@ -1,0 +1,8 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-body')]
+
+strip: //div[@id='google-news-link']//p
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' end-article-dot ')]//ul
+strip_id_or_class: gms-main-body
+
+
+test_url: https://archiv.hn.cz/c1-67795930-stredoevropsky-nejen-ekonomicky-kaleidoskop-jak-to-bude-dal-v-cesku-polsku-a-madarsku

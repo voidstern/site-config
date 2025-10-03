@@ -1,0 +1,7 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' capcalera_titol__xA7Tm ')]//span
+body: //div[contains(concat(' ',normalize-space(@class),' '),'text_text')]
+author: //div[contains(concat(' ',normalize-space(@class),' '),' itemautor_autor_wrapper___B9hx ')]
+
+
+
+test_url: https://www.3cat.cat/3catinfo/alcaldes-de-junts-demanen-a-turull-aixecar-el-cordo-sanitari-a-alianca-catalana/noticia/3371234/
