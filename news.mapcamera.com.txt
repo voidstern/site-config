@@ -1,0 +1,9 @@
+strip: //center
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]//div[contains(concat(' ',normalize-space(@class),' '),' txt-r ')]
+strip: //section[contains(concat(' ',normalize-space(@class),' '),' newpost ')]
+strip_id_or_class: gadgetList
+strip_image_src: mc_osusumeev-1.jpg
+strip_image_src: newmember_times2.jpg
+
+
+test_url: https://news.mapcamera.com/maptimes/gf55mm_to_gf80_gf110mm/

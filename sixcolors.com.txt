@@ -1,0 +1,7 @@
+title: //div[contains(concat(' ',normalize-space(@class),' '),' column2 ')]//h1
+body: //div[contains(concat(' ',normalize-space(@class),' '),' column2 ')]
+
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' column2 ')]//h1
+
+
+test_url: https://sixcolors.com/post/2025/10/iphone-air-review-back-to-the-future/

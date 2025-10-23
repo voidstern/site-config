@@ -1,0 +1,10 @@
+body: //div[@class='panel']
+
+strip: //div[@id='comic']/div[@class='floor4 ceiling2']
+strip_id_or_class: logo_2023
+strip_id_or_class: more_list
+strip_id_or_class: nav_2023
+strip_id_or_class: pad
+
+
+test_url: https://theoatmeal.com/comics/silly_pumpkin
