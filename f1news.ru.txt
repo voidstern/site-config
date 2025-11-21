@@ -1,0 +1,12 @@
+title: //div[@id='post-headline']/h1[@class='post_title']
+body: //div[@class='widget post']
+date: //div[@class='post_date']
+
+strip_id_or_class: clearfix
+strip_id_or_class: post_info
+strip_id_or_class: post_more
+strip_id_or_class: post_tags
+strip_id_or_class: post_title
+
+
+test_url: https://www.f1news.ru/news/f1-185315.html

@@ -1,0 +1,17 @@
+title: //div[@id='featured_news_details']//h3[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+body: //div[@id='main-wrap']
+author: //div[@id='featured_news_meta_alt']//div[contains(concat(' ',normalize-space(@class),' '),' entry_meta_extra ')]//div[contains(concat(' ',normalize-space(@class),' '),' author ')]
+date: //div[@id='featured_news_meta_alt']//div[contains(concat(' ',normalize-space(@class),' '),' entry_meta ')]//div[contains(concat(' ',normalize-space(@class),' '),' date ')]
+
+strip_id_or_class: author
+strip_id_or_class: category
+strip_id_or_class: cky-consent-bar
+strip_id_or_class: date
+strip_id_or_class: front-content
+strip_id_or_class: related_posts
+strip_id_or_class: tags
+include_id_or_class: news_post
+include_id_or_class: news_post_details
+
+
+test_url: https://goodnews.eu/9-smarte-tools-die-den-alltag-bereichern/
