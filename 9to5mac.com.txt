@@ -3,6 +3,7 @@ body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
 author: //div[contains(concat(' ',normalize-space(@class),' '),' fs-sm ')]
 author: //span[contains(concat(' ',normalize-space(@class),' '),' author-name ')]
 
+strip: // //li[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'sponsored')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' fs-sm ')]
 strip: //h1[contains(concat(' ',normalize-space(@class),' '),' h1 ')]
 strip: //hr
@@ -24,3 +25,4 @@ strip_id_or_class: related-guides
 
 test_url: https://9to5mac.com/2024/07/25/fortnites-iphone-relaunch-is-coming-soon-to-the-eu-including-on-altstore/
 test_url: https://9to5mac.com/2025/02/19/ios-184-release-date-when-to-expect-new-features/
+test_url: https://9to5mac.com/2025/12/04/happy-hour-567/

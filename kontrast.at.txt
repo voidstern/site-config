@@ -1,0 +1,12 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' content-inner ')]
+
+strip_id_or_class: dem-poll-shortcode
+strip_id_or_class: dont-print
+strip_id_or_class: jeg_custom_comment_wrapper
+strip_id_or_class: jeg_nav_row
+strip_id_or_class: jnews_comment_container
+strip_id_or_class: mailpoet_form
+strip_id_or_class: su-note
+
+
+test_url: https://kontrast.at/das-sind-die-hintergruende-der-nikolo-luege/

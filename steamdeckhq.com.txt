@@ -1,0 +1,7 @@
+title: //h1[contains(@id, 'headline')]
+
+strip: //div[@class='ct-div-block']/div[@class='ct-div-block']
+strip: //span[@id='span-7-138']/p[1]
+
+
+test_url: https://steamdeckhq.com/news/proton-experimental-update-fixing-nascar-25/
