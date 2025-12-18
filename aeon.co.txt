@@ -35,4 +35,5 @@ prune: no
 
 test_url: https://aeon.co/essays/how-did-creativity-become-an-engine-of-economic-growth
 test_url: https://aeon.co/essays/when-ais-do-science-it-will-be-strange-and-incomprehensible
+test_url: https://aeon.co/essays/why-physics-today-stands-on-the-wings-of-angels-and-demons
 test_url: https://aeon.co/essays/william-herschels-sensors-let-us-see-the-invisible-universe

@@ -1,9 +1,11 @@
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' article_articleTitle__Eo_zX ')]
-body: //article
+body: //main[@id='main']//article
 author: //a[contains(concat(' ',normalize-space(@class),' '),' article_author-name__2tybB ')]
 
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' breadcrumbs_wrapper__Vq1kW ')]
 strip_id_or_class: soft-paywall_wrapper__vfn8o
+strip: //div[contains(@class, 'article_articleHeaderSocialWrapper__')]
+strip: //div[contains(@class, 'soft-paywall_wrapper__')]
 strip_id_or_class: tags-widget_header__EhNe7
 strip_id_or_class: tags-widget_tags-wrapper__6PpBP
 

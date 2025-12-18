@@ -1,11 +1,14 @@
 title: //app-header-content-headline//h2
-title: //h2[@class:'c-headline--article']
+title: //h2[@class='c-headline--article']
 body: //app-storyline-elements[contains(concat(' ',normalize-space(@class),' '),' ng-star-inserted ')]
 body: //div[@class:'o-article__content']
 author: //app-authors[contains(concat(' ',normalize-space(@class),' '),' ng-star-inserted ')]//a[contains(concat(' ',normalize-space(@class),' '),' ng-star-inserted ')]
 author: //div[@class:'c-metadata']//a[@class='c-link--borderless']
 date: //app-story-date
 date: //time
+author: //div[@class='c-metadata']//a[@class='c-link--borderless']
+
+body: //div[@class='o-article__content']
 
 strip_id_or_class: c-socialshare
 strip_id_or_class: c-standard-article-teaser
