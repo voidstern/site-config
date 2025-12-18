@@ -12,3 +12,4 @@ strip_id_or_class: tags-widget_tags-wrapper__6PpBP
 web_view_load: yes
 
 test_url: https://www.berliner-zeitung.de/politik-gesellschaft/boris-palmer-ueber-gruene-jugend-nun-endet-die-feindliche-uebernahme-der-partei-li.2257587
+test_url: https://www.berliner-zeitung.de/wirtschaft-verantwortung/militarisierung-in-adlershof-so-bereiten-chemiker-die-bundeswehr-auf-krieg-vor-li.2361153

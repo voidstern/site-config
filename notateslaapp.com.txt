@@ -1,9 +1,13 @@
-body: //div[contains(concat(' ',normalize-space(@class),' '),' content ')]
+body: (//div[contains(concat(' ',normalize-space(@class),' '),' content ‘)]) [1]
 
+strip: //article/h1
+strip_id_or_class: follow-us
 strip_id_or_class: mod-latest-news
 strip_id_or_class: mod-list-versions
 strip_id_or_class: mod-update-overview
+strip_id_or_class: module-end-article-highlight
 include_id_or_class: mod-update-feature
 
 
+test_url: https://www.notateslaapp.com/news/3255/tesla-fsd-v1413-starts-rolling-out-to-non-influencers-expands-to-model-s-x
 test_url: https://www.notateslaapp.com/tesla-app-updates/version/4.44.0/release-notes

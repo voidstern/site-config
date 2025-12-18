@@ -1,12 +1,17 @@
 title: //h2[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')]
+body: //div[contains(@class, 'article-content')]
 body: //div[contains(@class, 'article__body__content')]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' eObytK ')]
 date: //time[contains(@class, 'article__date published')]/@datetime
 
+strip: //aside
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' czMzUM ')]
+strip: //footer
+strip: //header
 strip: //p[contains(concat(' ',normalize-space(@class),' '),' glDrug ')]
 strip: //span[contains(concat(' ',normalize-space(@class),' '),' font-mono ')]
 strip_id_or_class: article__shares
+strip_id_or_class: border-gray-300
 strip_id_or_class: czMzUM
 strip_id_or_class: dWtybc
 strip_id_or_class: foUHod
@@ -22,6 +27,7 @@ strip_id_or_class: mb-6
 strip_id_or_class: min-[768px]:mt-11
 strip_id_or_class: mt-2.5
 strip_id_or_class: newsletter-signup
+strip_id_or_class: no-pagemarks
 strip_id_or_class: print:text-4xl
 strip_id_or_class: pullquote
 strip_id_or_class: sc-3686185f-11
@@ -33,6 +39,7 @@ strip_id_or_class: toggleMobileCreditBtn
 
 prune: no
 
+test_url: https://aeon.co/essays/historys-shaming-fascination-for-the-so-called-idiot-savant?utm_source=rss-feed
 test_url: https://aeon.co/essays/how-did-creativity-become-an-engine-of-economic-growth
 test_url: https://aeon.co/essays/when-ais-do-science-it-will-be-strange-and-incomprehensible
 test_url: https://aeon.co/essays/why-physics-today-stands-on-the-wings-of-angels-and-demons
