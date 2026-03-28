@@ -1,4 +1,8 @@
 body: //div[contains(@class, 'contenttext')]
+
 strip_id_or_class: jp-relatedposts
 
+web_view_load: yes
+
 test_url: https://osxdaily.com/2024/12/16/disable-mail-categories-inbox-iphone/
+test_url: https://osxdaily.com/2026/01/21/use-show-borders-to-clarify-liquid-glass-ui-on-ipados-26-ios-26/

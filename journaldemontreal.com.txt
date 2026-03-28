@@ -1,0 +1,20 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' titre-principale ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-wrapper ')]
+
+strip: //div[@id='bigbox_single-bcomments']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' jrdx-breadcrumbs ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' rs-article ')]//div[contains(concat(' ',normalize-space(@class),' '),' social_wrapper ')]
+strip_id_or_class: FFSelector
+strip_id_or_class: FFSelector_label
+strip_id_or_class: credit_photo
+strip_id_or_class: espace_talk
+strip_id_or_class: espace_talk_694acd9fde6b67fc6a1ae8e1
+strip_id_or_class: external
+strip_id_or_class: recommended-story
+strip_id_or_class: same-subject-container
+strip_id_or_class: titre-principale
+strip_id_or_class: toreadalso-fromEMP
+
+web_view_load: yes
+
+test_url: https://www.journaldemontreal.com/2025/12/23/loi-sur-le-redecoupage-electoral-quebec-porte-la-contestation-devant-la-cour-supreme

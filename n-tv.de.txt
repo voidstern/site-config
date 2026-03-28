@@ -1,8 +1,13 @@
-date: //span[@class='article__date']
 title: //title
 body: //div[@class='article__text']
+date: //span[@class='article__date']
+
+strip_id_or_class: Title_title
+strip_id_or_class: article-detail-footer_tags
+strip_id_or_class: article-detail-head
+strip_id_or_class: detail-footer
+strip_id_or_class: inline_teaser
+
 
 test_url: https://www.n-tv.de/politik/Die-alten-Maenner-werden-es-nie-blicken-article21447318.html
-
-# Last update: 2019-12-12
-# Tested with: Wallabag 2.3.8
+test_url: https://www.n-tv.de/technik/Crimson-Desert-serviert-uns-einfach-mal-so-die-ganze-Karte-id30435244.html

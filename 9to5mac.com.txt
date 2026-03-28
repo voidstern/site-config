@@ -18,11 +18,15 @@ strip_id_or_class: comments
 strip_id_or_class: container
 strip_id_or_class: disclaimer-affiliate
 strip_id_or_class: google-news-link
+strip_id_or_class: google-preferred-source-badge-dark
+strip_id_or_class: google-preferred-source-badge-light
 strip_id_or_class: h-read-also
 strip_id_or_class: post-meta
 strip_id_or_class: related-guides
+strip_id_or_class: wp-block-heading
 
 
 test_url: https://9to5mac.com/2024/07/25/fortnites-iphone-relaunch-is-coming-soon-to-the-eu-including-on-altstore/
 test_url: https://9to5mac.com/2025/02/19/ios-184-release-date-when-to-expect-new-features/
 test_url: https://9to5mac.com/2025/12/04/happy-hour-567/
+test_url: https://9to5mac.com/2026/03/19/apple-saw-23-jump-in-iphone-sales-in-china-in-early-2026/

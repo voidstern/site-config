@@ -1,0 +1,7 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+
+strip_id_or_class: jeg_post_tags
+
+tidy: no
+
+test_url: https://blog.jlist.com/featured/when-you-die-an-isekai-onsen-paradise-is-waiting-for-you/

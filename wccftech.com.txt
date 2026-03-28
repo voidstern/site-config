@@ -1,0 +1,5 @@
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post ')]
+
+
+
+test_url: https://wccftech.com/amds-semi-custom-soc-thatll-power-the-next-gen-xbox-is-progressing-well-to-support-a-launch-in-2027-says-amd-ceo/

@@ -1,0 +1,11 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' article-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' article-container ‘)]
+
+strip_id_or_class: article-lock
+strip_id_or_class: article-pubdate
+strip_id_or_class: au-wrapper
+strip_id_or_class: news-list-block
+
+web_view_load: yes
+
+test_url: https://www.vb.is/skodun/hugleidingar-a-nyju-ari/

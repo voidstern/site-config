@@ -1,0 +1,9 @@
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' article-tags ')]//ul
+strip_id_or_class: article-share
+strip_id_or_class: fs-iai
+strip_id_or_class: post-nav-next
+strip_id_or_class: post-nav-prev
+strip_id_or_class: primisslate
+
+
+test_url: https://www.neowin.net/news/we-are-moving-faster-than-ever-imagined-possible-raising-serious-universal-questions/

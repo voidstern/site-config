@@ -1,0 +1,22 @@
+title: //meta[@property="og:title"]/@content
+body: //article[1]//div[position()<3]/div[1]
+author: //meta[@name="author"]/@content
+
+strip: //button
+strip: //div[contains(@class, 'tweet-footer')]//span
+strip: //p[contains(concat(' ',normalize-space(@class),' '),' button-wrapper ')]
+strip: //svg
+strip_id_or_class: embedded-publication
+strip_id_or_class: expanded-link-description
+strip_id_or_class: expanded-link-domain
+strip_id_or_class: header-anchor-widget
+strip_id_or_class: profile-hover-card-target
+strip_id_or_class: show-subscribe
+strip_id_or_class: subscribe-widget
+strip_id_or_class: subscription-widget-wrap
+
+prune: no
+web_view_load: yes
+
+test_url: https://jiwankshetry.substack.com/p/must-read-kaiser-kuo-china-is-here?r=miep&utm_medium=ios&shareImageVariant=overlay&triedRedirect=true
+test_url: https://substack.com/home/post/p-152931025
