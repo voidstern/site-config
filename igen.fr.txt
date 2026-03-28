@@ -3,5 +3,6 @@ title: //header[contains(@class, 'news-header')]/h1
 author: //span[@class="infos"]/span[@class="username"]
 date: //span[@class="infos"]/time/@datetime
 body: //article[contains(@class, 'w-full')]
+body: //main//header/following-sibling::article
 
 test_url: https://www.igen.fr/ipad/2024/05/les-nouveaux-ipad-pro-ajoutent-un-deuxieme-capteur-de-luminosite-larriere-143725
