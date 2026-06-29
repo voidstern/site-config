@@ -1,4 +1,6 @@
 body: //div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
+body: //article/div[contains(concat(' ',normalize-space(@class),' '),' entry ')]
+body: //div[@class='entry-inner']
 
 # Remove lazy-loaded image tags, favouring image in <noscript> elements
 replace_string(<noscript>): <!-- noscript -->
@@ -18,6 +20,10 @@ strip: //div[@id='comments']
 strip_id_or_class: aawp-disclaimer
 strip_id_or_class: su-posts
 strip_id_or_class: wp-embedded-content
+
+# remove google preferences box
+strip: //a[contains(@href, 'google.com/preferences/')]
+
 
 prune: no
 

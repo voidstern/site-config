@@ -1,7 +1,24 @@
+title: //h1[@id='article-title']
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' article_articleTitle__Eo_zX ')]
+body: //main//article
 body: //main[@id='main']//article
+author: //a[contains(@href,'/autoren/')]/span
 author: //a[contains(concat(' ',normalize-space(@class),' '),' article_author-name__2tybB ')]
+date: //time[@datetime]/@datetime
 
+strip: //article//article
+strip: //a[contains(@href,'/autoren/')]//img
+strip: //div[starts-with(@id,'qmn-ad-')]
+strip: //div[@id='article-share']
+strip: //div[@id='beyondwords-player-root']
+strip: //div[@id='beyondwords-custom-ui']
+strip: //div[@id='copy-link-popup']
+strip: //div[@id='paywall-tabs']
+strip: //button[@id='paywall-login-button']
+strip: //button[@data-paywall-submit]
+strip: //div[@id='endOfContent']
+strip_id_or_class: blz-sidebar
+strip_id_or_class: paywall
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' breadcrumbs_wrapper__Vq1kW ')]
 strip_id_or_class: soft-paywall_wrapper__vfn8o
 strip: //div[contains(@class, 'article_articleHeaderSocialWrapper__')]
