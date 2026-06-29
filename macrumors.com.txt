@@ -1,12 +1,26 @@
+title: //h3[@class='title']
+body: //div[@class='content']
 author: substring-after(//div[@class='byline'], " by ")
 date: substring-before(//div[@class='byline'], " by ")
 
 # set body
 body: //div[@class='content']
+strip: //form[@id='mc-embedded-subscribe-form']
+strip: //h1[contains(concat(' ',normalize-space(@class),' '),' heading--noMargin--mnRHPAnD ')]
 strip_id_or_class: commentsContainer
+strip_id_or_class: heading--1cooZo6n
+strip_id_or_class: heading--h3--23mHEuMI
+strip_id_or_class: inline--Nnb-B96C
 strip_id_or_class: linkback
+strip_id_or_class: meta--TIuZ8fDU
+strip_id_or_class: noUnderline--3ZXKqsHt
+strip_id_or_class: related
+strip_id_or_class: textRow--3IWlPgCD
+strip_id_or_class: textRow__minor--1ftgA2JY
 
 # set title
 title: //h3[@class='title']
 #strip: //div[@class='content']/h3
 test_url: http://www.macrumors.com/2010/11/10/apple-debuts-new-apple-tv-and-itunes-movie-content-in-japan/
+
+test_url: https://www.macrumors.com/2026/03/30/apple-discontinued-more-than-mac-pro/
