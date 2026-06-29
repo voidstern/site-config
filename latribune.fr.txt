@@ -1,3 +1,10 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' font-bold ')]
 body: //div[@class="body-text"]
+body: //div[@id='ob-article-body']
+author: //a[contains(concat(' ',normalize-space(@class),' '),' underline ')]
+date: //time//p[contains(concat(' ',normalize-space(@class),' '),' text-info ')]
 
+
+
+test_url: https://www.latribune.fr/article/la-tribune-dimanche/dimanche-eco/281066835822614/dominique-schelcher-president-directeur-general-de-cooperative-u-les-consommateurs-ont-bascule-vers-les-marques-de-distributeur
 test_url: https://www.latribune.fr/la-tribune-dimanche/sports/thomas-jolly-le-peuple-francais-s-est-surpris-a-s-entendre-1014592.html

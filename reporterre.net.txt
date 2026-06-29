@@ -9,6 +9,7 @@ strip_id_or_class: glibelle
 web_view_load: yes
 
 test_url: https://reporterre.net/Aller-en-festival-a-velo-le-nouveau-defi-des-fetards-ecolos
+test_url: https://reporterre.net/Canicule-trois-reacteurs-nucleaires-a-l-arret
 test_url: https://reporterre.net/L-offensive-contre-les-Airbnb-continue-dans-les-Alpes
 test_url: https://reporterre.net/Le-brame-du-cerf-raconte-par-les-biches
 test_url: https://reporterre.net/Les-milliardaires-n-en-finissent-plus-de-s-enrichir

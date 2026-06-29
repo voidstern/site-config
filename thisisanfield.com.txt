@@ -1,0 +1,7 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' elementor-heading-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' iai-selector ')]//div[contains(concat(' ',normalize-space(@class),' '),' elementor-widget-container ')]
+date: //time
+
+
+
+test_url: https://www.thisisanfield.com/2026/05/szoboszlai-blasts-liverpool-lack-of-focus-man-united-2026/

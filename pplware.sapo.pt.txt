@@ -1,0 +1,9 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' post-title ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-inner ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' post-inner ')]
+date: //time
+
+
+web_view_load: no
+
+test_url: https://pplware.sapo.pt/smartphones-tablets/ios/ios-26-5-chega-na-proxima-semana-estas-sao-as-novidades-uteis-para-o-iphone/

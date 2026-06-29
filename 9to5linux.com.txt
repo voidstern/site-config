@@ -1,4 +1,6 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' h1 ')]
+body: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
 body: //div[contains(concat(' ',normalize-space(@class),' '),' post-content ')]
 author: //div[contains(concat(' ',normalize-space(@class),' '),' fs-sm ')]
 author: //span[contains(concat(' ',normalize-space(@class),' '),' author-name ')]
@@ -22,4 +24,5 @@ strip_id_or_class: post-meta
 strip_id_or_class: related-guides
 
 
+test_url: https://9to5linux.com/coreboot-26-03-open-source-firmware-adds-full-support-for-intel-pantherlake-socs
 test_url: https://9to5linux.com/lxqt-2-2-desktop-environment-released-with-many-wayland-improvements
