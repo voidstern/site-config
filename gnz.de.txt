@@ -1,5 +1,7 @@
 body: //div[@id='contentMain']//article/div[position()>1] | //header[contains(@class, 'ArticleHead')]
 author: //meta[@name='author']/@content
+body_json_ld: //script[@type='application/ld+json']
+bypass_paywall: true
 
 strip: //nav
 strip: //button

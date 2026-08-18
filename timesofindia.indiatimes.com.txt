@@ -1,0 +1,2 @@
+bypass_paywall: true
+alternate_link: //link[@rel='amphtml']

@@ -2,6 +2,9 @@
 # http://www.infzm.com/content/71068
 # http://www.infzm.com/content/41577
 
+bypass_paywall: true
+web_view_load: yes
+
 author://em[contains(@class, 'toAuthor')]
 date:substring(//em[contains(@class, 'pubTime')],1)
 body://section[contains(@id, 'articleContent')]

@@ -1,0 +1,3 @@
+bypass_paywall: true
+alternate_link: //link[@rel='alternate' and @type='application/json']
+body_json: .

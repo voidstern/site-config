@@ -1,0 +1,2 @@
+bypass_paywall: true
+body_json_ld: //script[@type='application/ld+json']

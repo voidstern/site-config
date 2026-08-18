@@ -1,5 +1,7 @@
 body: //article/div[contains(concat(' ',normalize-space(@class),' '),' a__in ')]
 title: //h2[contains(concat(' ',normalize-space(@class),' '),' btRDxK ')]
+body_json_ld: //script[@type='application/ld+json']
+bypass_paywall: true
 
 strip_id_or_class: a__rel-a-li
 strip_id_or_class: ord--0

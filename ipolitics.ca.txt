@@ -1,0 +1,2 @@
+bypass_paywall: true
+body_json: //script[@id='__NEXT_DATA__']

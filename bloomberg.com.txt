@@ -7,6 +7,8 @@
 # option 'Retrieve content from the browser' in it's settings
 
 title: //meta[@property="og:title"]/@content
+body_json: //script[@data-component-props='ArticleBody' or @data-component-props='FeatureBody']
+bypass_paywall: true
 
 date: //meta[@name="iso-8601-publish-date"]/@content
 date: //meta[@name="parsely-pub-date"]/@content
