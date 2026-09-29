@@ -1,0 +1,10 @@
+title: //h1[contains(@class,'_title_')]
+body: //*[@itemprop='articleBody']
+author: //a[contains(@class,'_author__title_')]
+series: //div[@data-tab='tabpanel-series']//a[contains(@href,'/series/')]
+episode: normalize-space(substring-before(substring-after(//div[@data-tab='tabpanel-series']//p,'Part '),' of'))
+tags: //div[@data-tab='tabpanel-tags']//a[contains(@class,'_tag_link_')]
+next_page_link: //section[.//h3[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'read more of this series')]]//a[.//span[normalize-space()='Next Part']]
+strip: //header | //footer | //nav | //div[contains(@class,'_info_ercll_')] | //div[contains(@class,'_bar_ercll_')] | //div[contains(@class,'_widget_spvht_')] | //section[.//h3[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'public beta')]] | //div[contains(@class,'_rate_')] | //div[contains(@class,'_actions_')] | //div[contains(@class,'_comments_')] | //section[.//h3[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'similar stories')]] | //section[.//h3[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'story tags')]] | //section[.//h3[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'read more of this series')]]
+prune: yes
+tidy: yes

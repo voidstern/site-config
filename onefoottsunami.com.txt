@@ -1,0 +1,4 @@
+strip: //div[@id='sidebar']
+
+
+test_url: https://onefoottsunami.com/2026/09/11/25-years-of-flags/

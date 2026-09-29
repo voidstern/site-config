@@ -1,0 +1,4 @@
+strip_id_or_class: comments
+
+
+test_url: https://bernd.distler.ws/archives/1879-wie-ich-aktuell-meine-Feeds-verwalte.html
