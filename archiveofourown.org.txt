@@ -1,27 +1,41 @@
+# Description: Fix XPaths to include ALL chapters on 'view_full_work' pages.
 title: //h2[@class='title']
 title: //h2[contains(concat(' ',normalize-space(@class),' '),' title ')]
 body: //div[@id="workskin"]
 author: //h3[@class='byline']
 author: //a[@class='login author']
+# Include: work meta, summary, chapter information, and notes which Instapaper strips out on default.
 author: //h3[contains(concat(' ',normalize-space(@class),' '),' byline ')]
 series: (//dd[@class='series']//span[@class='position'])[1]/a
 episode: substring-before(substring-after(normalize-space((//dd[@class='series']//span[@class='position'])[1]), 'Part '), ' of ')
 date: //dd[contains(concat(' ',normalize-space(@class),' '),' published ')]
 single_page_link: //div[@id='main']//a[contains(@href, 'view_adult=true')]
+# Exclude: header, footer, navigation, comments.
 
 strip: //h2[contains(concat(' ',normalize-space(@class),' '),' title ')]
 strip_id_or_class: add_comment
 strip_id_or_class: add_comment_placeholder
 strip_id_or_class: feedback
+# Notes: User is a newbie with XPaths.
 strip_id_or_class: footer
 strip_id_or_class: globalize
+series: //dd[contains(concat(' ',normalize-space(@class),' '),' series ')]//span[contains(concat(' ',normalize-space(@class),' '),' series ')]//span[contains(concat(' ',normalize-space(@class),' '),' position ')]
 strip_id_or_class: header
 strip_id_or_class: kudos
 strip_id_or_class: landmark
 strip_id_or_class: navigation
 strip_id_or_class: preface
-
+# if first catch didn't work, try to re-fetch
 http_header(User-Agent): PHP/8.4
 prune: no
-
 test_url: https://archiveofourown.org/works/83053181
+strip_id_or_class:header
+strip_id_or_class:navigation
+strip_id_or_class:feedback
+strip_id_or_class:kudos
+strip_id_or_class:add_comment_placeholder
+strip_id_or_class:add_comment
+strip_id_or_class:globalize
+strip_id_or_class:footer
+test_url: https://archiveofourown.org/works/229402?view_full_work=true
+test_url: https://archiveofourown.org/works/750111/chapters/1399929

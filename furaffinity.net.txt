@@ -2,11 +2,11 @@ title: //div[contains(concat(' ',normalize-space(@class),' '),' submission-title
 body: //div[contains(concat(' ',normalize-space(@class),' '),' submission-description-text ')]
 author: //span[contains(concat(' ',normalize-space(@class),' '),' c-usernameBlockSimple__displayName ')]
 
+image: //img[@id='submissionImg']
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' submission-description-artist ')]
 strip_id_or_class: bbcode
 strip_id_or_class: bbcode_center
-
 replace_string(Fur Affinity | For all things fluff, scaled, and feathered!): 
 web_view_load: yes
-
 test_url: https://www.furaffinity.net/view/61747314/
+test_url: https://www.furaffinity.net/view/66611890/

@@ -1,17 +1,49 @@
 title: //h2[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')]
+title: //h1
+title: //h2[contains(concat(' ',normalize-space(@class),' '),' text-pretty ')]
+body: //*[@id='article-content']
+body: //div[contains(concat(" ", normalize-space(@class), " "), ' article-content ')]
+author: //p[contains(.,'by ')]/text()[normalize-space()][1]
+author: //aside//a[contains(@href,'/users/')]
+tags: //*[@id='article-content']/following-sibling::*[1]//a[contains(@href,'/science/')]
+date: //div[contains(@class,'no-pagemarks')]//div[contains(@class,'font-mono') and contains(.,'20')]
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' font-semibold ')]
+
+strip: //*[@id='article-content']//audio
+strip: //*[@id='article-content']//div[contains(.,'Listen to this essay')]
+strip: //*[@id='article-content']//p[contains(concat(' ',normalize-space(@class),' '),' pullquote ')]
+strip: //div[contains(@class,'no-pagemarks')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' text-left ')]//p
+strip: //footer
+strip: //header
 body: //div[contains(@class, 'article-content')]
+strip: //main/div[contains(@class,'print:hidden')]
+strip_id_or_class: [font-synthesis-weight:auto]
+strip_id_or_class: font-semibold
+strip_id_or_class: font-serif
+strip_id_or_class: leading-none
+strip_id_or_class: max-[960px]:text-[42px]
+strip_id_or_class: max-md:text-black
+strip_id_or_class: max-md:text-left
 body: //div[contains(@class, 'article__body__content')]
+strip_id_or_class: mb-6
+strip_id_or_class: md:mt-11
+strip_id_or_class: mt-2.5
+strip_id_or_class: print:mt-4
+strip_id_or_class: print:text-4xl
+strip_id_or_class: print:text-left
+strip_id_or_class: text-7xl
 body: //div[contains(concat(' ',normalize-space(@class),' '),' eObytK ')]
+rewrite: yes
+prune: no
+test_url: https://aeon.co/essays/black-holes-ring-like-bells-what-happens-next-is-stranger
 author: //p[contains(concat(' ',normalize-space(@class),' '),' text-left ')]
 date: //time[contains(@class, 'article__date published')]/@datetime
+image: //meta[@property='og:image']/@content
 date: //div[contains(concat(' ',normalize-space(@class),' '),' text-grey-mid-light ')]
-
 strip: //aside
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' czMzUM ')]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' flex ') and (contains(concat(' ',normalize-space(@class),' '),' items-center ')) and (contains(concat(' ',normalize-space(@class),' '),' font-sans '))]
-strip: //footer
-strip: //header
 strip: //p[contains(concat(' ',normalize-space(@class),' '),' glDrug ')]
 strip: //span[contains(concat(' ',normalize-space(@class),' '),' font-mono ')]
 strip_id_or_class: article__shares
@@ -19,29 +51,17 @@ strip_id_or_class: border-gray-300
 strip_id_or_class: czMzUM
 strip_id_or_class: dWtybc
 strip_id_or_class: foUHod
-strip_id_or_class: font-semibold
-strip_id_or_class: font-serif
 strip_id_or_class: gFjSjq
 strip_id_or_class: jrWkjX
-strip_id_or_class: leading-none
 strip_id_or_class: max-[767px]:text-black
 strip_id_or_class: max-[767px]:text-left
-strip_id_or_class: max-[960px]:text-[42px]
-strip_id_or_class: mb-6
 strip_id_or_class: min-[768px]:mt-11
-strip_id_or_class: mt-2.5
 strip_id_or_class: newsletter-signup
 strip_id_or_class: no-pagemarks
-strip_id_or_class: print:text-4xl
 strip_id_or_class: pullquote
 strip_id_or_class: sc-3686185f-11
 strip_id_or_class: sc-809612e0-0
 strip_id_or_class: sc-c83e4c92-0
 strip_id_or_class: sc-d0d42ecb-6
-strip_id_or_class: text-7xl
 strip_id_or_class: toggleMobileCreditBtn
-
-rewrite: yes
-prune: no
-
 test_url: https://aeon.co/essays/william-herschels-sensors-let-us-see-the-invisible-universe

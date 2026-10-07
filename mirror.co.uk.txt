@@ -1,10 +1,8 @@
 title: //h1[contains(concat(' ',normalize-space(@class),' '),' HeadingOne_heading-one__mmNWJ ')]
-body: //article[@id='article-body']
 
+body: //article[@id='article-body']
+test_url: https://www.mirror.co.uk/sport/football/news/england-world-cup-tuchel-argentina-37667453
 strip_id_or_class: GooglePreferredSource_wrapper__lSRA6
 strip_id_or_class: HeadingOne_heading-one__mmNWJ
 strip_id_or_class: __className_cb61cb
-
 web_view_load: yes
-
-test_url: https://www.mirror.co.uk/sport/football/news/england-world-cup-tuchel-argentina-37667453
