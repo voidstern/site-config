@@ -45,6 +45,33 @@ strip_id_or_class: table-jtoc
 strip_id_or_class: tags
 strip_id_or_class: topictags
 
+strip_id_or_class: go-button-bar
+strip: //div[contains(@class, 'authors--withsource')]
+strip: //div[@class='toc']
+strip: //li[not(.//text()[normalize-space()])][not(@class)]
+strip: //div[contains(@class, 'go-teaser-block')]
+strip: //ul[contains(@class, 'go-alink-list')]
+strip: //hr[contains(@class, 'go-hr')]/following-sibling::div[contains(@class, 'go-grid')]
+strip: //div[contains(@class, 'go-article-header__meta')]
+strip: //div[contains(@class, 'go-article-header__button-bar')]
+strip: //article[contains(@class, 'go-teaser--variant-affiliate')]
+strip: //div[contains(@class, 'go-gallery__actions')]
+strip: //nav[contains(@class, 'go-article__pagination')]
+strip: //div[contains(@class, 'go-article-header__series')][.//a[contains(@class, 'go-label')]]
+strip: //details[contains(@class, 'go-article__index')]
+
+# Tidy up galleries (could still be improved, though)
+strip: //img[@src='']
+strip: //div[contains(@style,'margin')]
+strip: //figure[contains(@id,'gvideo')]
+strip: //figure/figcaption[contains(text(), 'Bitte aktivieren Sie Javascript')]
+
+# Tidy up links
+strip_attr: //a/@title
+strip_attr: //a/@target
+strip: //svg[contains(@class, 'go-external-link__icon')]
+strip: //span[@class='go-vh' and normalize-space(text())='(öffnet im neuen Fenster)']
+
 replace_string(</h1>): </h2>
 replace_string(<h1): <h2
 http_header(Cookie): golem_multipage=single
