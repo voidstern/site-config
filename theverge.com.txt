@@ -1,78 +1,59 @@
-author: //meta[@name="author"]/@content
 title: //meta[@property="og:title"]/@content
 body: //article
 body: //div[contains(@class, 'c-entry-content') or contains(@class, 'c-entry-hero__image')]
-date: //meta[@property="article:published_time"]/@content
 body: //div[contains(concat(' ',normalize-space(@class),' '),' l-col__main ')]
+author: //meta[@name="author"]/@content
+date: //meta[@property="article:published_time"]/@content
 
-# //picture selector seems to cause problems with text extraction.
 strip: //*[@id="content"]/div[1]/ul
-# body: //picture[contains(@class, 'c-picture')] | //div[contains(@class, 'c-entry-content') or contains(@class, 'c-entry-hero__image')]
 strip: //a[contains(@href, '/pages/how-we-rate')]
-# for vergecasts, e.g. http://www.theverge.com/2013/8/22/4648566/the-vergecast-090-august-22th-2013-video
 strip: //aside
 strip: //div[@aria-label="Zoom"]/img
 strip: //div[contains(@class, 'duet--media--content-warning')]/img
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' waimqt6 ')]
+strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' duet--layout--entry-image ')]//img[@src = ../preceding-sibling::div/img/@src]
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' grow ')]
 strip: //h1
+strip: //img[@data-nimg='1'][ancestor::div[contains(concat(" ", normalize-space(@class), " "), ' duet--ledes--standard-lede-bottom ')]]
 strip: //li[contains(concat(' ',normalize-space(@class),' '),' inline ')]
 strip: //nav
+strip: //p[contains(concat(" ", normalize-space(@class), " "), ' cbn62fg ')]
 strip_id_or_class: _1o1f7ku8
 strip_id_or_class: _1ymtmqpm
-strip_id_or_class: gallery
 strip_id_or_class: article-meta
 strip_id_or_class: c-related-list
 strip_id_or_class: c-river
-strip_id_or_class: story-navigation
 strip_id_or_class: chorus-ad-placement
 strip_id_or_class: comments
-strip_id_or_class: slegend
 strip_id_or_class: duet--article--article-byline
 strip_id_or_class: duet--article--article-pullquote
-strip_id_or_class: related-product-meta
 strip_id_or_class: duet--article--date-and-comments
 strip_id_or_class: duet--article--disclaimer
 strip_id_or_class: duet--recirculation--related-list
-strip_id_or_class: ui-jump-list
 strip_id_or_class: e-image__meta
-strip_id_or_class: pullquote
+strip_id_or_class: gallery
 strip_id_or_class: hidden
 strip_id_or_class: l-col__sidebar
 strip_id_or_class: m-ad
-strip_id_or_class: social-sharing
 strip_id_or_class: m-article__follow-bar
 strip_id_or_class: m-article__share-buttons
 strip_id_or_class: m-video-entry__excerpt
+strip_id_or_class: pullquote
+strip_id_or_class: related-product-meta
+strip_id_or_class: slegend
+strip_id_or_class: social-sharing
 strip_id_or_class: sr-only
+strip_id_or_class: story-navigation
 strip_id_or_class: tly2fw0
+strip_id_or_class: ui-jump-list
+
 replace_string(</noscript>): </div>
-# strip follow topics and authors
 replace_string(<div id="content" class="clearfix">): <div>
 replace_string(<div role="button"): <div
-# strip second version of lead text an lead image
 replace_string(<noscript>): <div>
-# remove query string from images
 replace_string(<strong> </strong>): <!-- nothing -->
 replace_string(?quality=90&): " foo="
-#replace_string(?quality=90&): ?quality=90" foo="
-#2017
-strip: //div[contains(concat(' ', normalize-space(@class), ' '), ' duet--layout--entry-image ')]//img[@src = ../preceding-sibling::div/img/@src]
+
 test_url: http://www.theverge.com/2017/1/12/14244634/signal-app-secure-messaging-trump-surveillance-encryption
 test_contains: While he now lives in an Oakland apartment
-# 2023
-test_url: https://theverge.com
-test_url: https://www.theverge.com/ai-artificial-intelligence/989376/ai-generated-food-why-does-it-look-like-that?ueid=b3bc8b68bf1d72001e60c713aaca0d92&bxid=676007905447fcdd0f0f6e38
-# Categories
-# Author blurb
-# Header divider
-# Fix double images
-# Related list
-# Pull quote
-# Indented article
-# Rating disclosures
-parser: html5php
-test_url: http://www.theverge.com/2012/2/29/2821763/lytro-review
-test_url: http://www.theverge.com/2011/11/3/2534861/nokia-lumia-800-review
-test_url: http://www.theverge.com/2013/2/24/4026114/barnes-noble-shifting-focus-away-from-nook-hardware
-test_url: http://www.theverge.com/2014/6/19/5824072/top-shelf-living-the-dream
-test_url: http://www.theverge.com/rss/frontpage
+test_url: https://www.theverge.com/tech/1009324/how-apple-can-win-the-smart-home

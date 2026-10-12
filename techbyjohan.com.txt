@@ -1,0 +1,2 @@
+prune: no
+test_url: https://www.techbyjohan.com/tech-insights-2026-week-42/
