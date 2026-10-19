@@ -10,8 +10,13 @@ strip: //mula-smartscroll[child::div[contains(concat(" ", normalize-space(@class
 strip_id_or_class: module-more-news
 strip_id_or_class: module-related
 
+replace_string(<ul class="pmc-fallback-list-items lrv-a-unstyle-list lrv-u-margin-t-2">):
+replace_string(<li class="pmc-fallback-list-item-wrap lrv-u-margin-b-2">):
+
 prune: yes
 
 test_url: http://www.rollingstone.com/culture/pictures/beyond-gypsy-blancharde-when-mothers-harm-their-kids-w437364
 test_contains: Former chemist and mother of three
+test_url: http://www.rollingstone.com/politics/news/the-plastic-bag-wars-20110725
+test_url: https://www.rollingstone.com/culture/culture-lists/beyond-gypsy-blancharde-when-mothers-harm-their-kids-for-attention-250206/hope-ybarra-250290/
 test_url: https://www.rollingstone.com/music/music-news/kelly-clarkson-brooklyn-store-shopping-experience-feud-1235641134

@@ -1,0 +1,11 @@
+title: //h1
+body: //div[contains(concat(" ", normalize-space(@class), " "), ' text-body-2 ')]
+body: //h1[contains(concat(' ',normalize-space(@class),' '),' entry-title ')]
+date: //span[contains(concat(" ", normalize-space(@class), " "), ' text-body-2 ')]
+date: //div[contains(concat(' ',normalize-space(@class),' '),' entry-content ')]
+image: //img[contains(concat(" ", normalize-space(@class), " "), ' v-img__img ')]
+
+
+web_view_load: yes
+
+test_url: https://order-order.com/2026/10/14/police-watchdog-orders-met-to-reopen-linehan-arrest-probe/

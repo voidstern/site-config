@@ -1,10 +1,21 @@
 title: //meta[@property="og:title"]/@content
 body: //div[contains(@class, 'o-article_block')]
+author: //a[contains(concat(" ", normalize-space(@class), " "), ' byline-author ')]
+date: //time
+image: //img[@data-slide-num='0']
 
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' add-on-google-widget ')]
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' byline-text-wrap ')]
+strip: //h1[@id='title-gallery']
+strip: //img[@data-slide-num='0']
+strip: //span[normalize-space(.)='Bangla press/Shutterstock']
+strip: //ul[contains(concat(" ", normalize-space(@class), " "), ' breadcrumbs ')]
 strip_id_or_class: engadget-article-footer
+strip_id_or_class: gallery-image
 strip_id_or_class: right-ads-rail
 
 http_header(User-Agent): Mozilla/5.0 (platform; rv:gecko-version) Gecko/gecko-trail Firefox/firefox-version
 prune: no
 
 test_url: https://www.engadget.com/2235700/amazon-is-severing-ties-with-two-other-mmos/
+test_url: https://www.engadget.com/2280999/waze-hidden-features-users-should-know/

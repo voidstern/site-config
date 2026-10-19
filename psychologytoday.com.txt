@@ -1,8 +1,13 @@
-body: //div[contains(@class, 'field-name-body')]
 title: //meta[@property="og:title"]/@content
+body: //div[contains(@class, 'field-name-body')]
 author: //h3[contains(@class, 'profile_card__profile-name')]
+image: //img[contains(concat(" ", normalize-space(@class), " "), ' image-article_inline_half_caption ')]
 
 strip_id_or_class: pt-ad
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' card-group__body ')][ancestor::div[@id='block-pt-content']]
 strip_id_or_class: advertisement-label
+strip_id_or_class: pt-ad
+
 
 test_url: https://www.psychologytoday.com/intl/blog/close-encounters/202008/why-do-people-take-selfies
+test_url: https://www.psychologytoday.com/us/blog/fulfilling-our-highest-possibility/202610/conscious-intelligence-is-the-key-to-a-fulfilled

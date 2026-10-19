@@ -1,7 +1,12 @@
 title: //h1[contains(@id, 'headline')]
+body: //div[@id='brxe-1ib2c3']
 
 strip: //div[@class='ct-div-block']/div[@class='ct-div-block']
+strip: //div[@id='brxe-2ci4em']
+strip: //div[@id='brxe-ae83w3']
+strip: //h1[@id='brxe-u76h7k']
+strip: //p[following-sibling::*[1][self::div and contains(concat(" ", normalize-space(@class), " "), ' content-post ')]]
 strip: //span[@id='span-7-138']/p[1]
 
 
-test_url: https://steamdeckhq.com/news/proton-experimental-update-fixing-nascar-25/
+test_url: https://steamdeckhq.com/news/steam-deck-beta-client-update-massive-changes-achievements/
