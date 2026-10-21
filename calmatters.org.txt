@@ -1,0 +1,7 @@
+body: //div[contains(concat(" ", normalize-space(@class), " "), ' entry-content ')]
+
+strip: //article[contains(concat(" ", normalize-space(@class), " "), ' type-page ')]
+strip: //div[child::article[contains(concat(" ", normalize-space(@class), " "), ' tag-san-diego ')]]
+
+
+test_url: https://calmatters.org/politics/2026/10/california-noncitizen-voter-suit/
