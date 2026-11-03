@@ -1,0 +1,10 @@
+title: //h1[contains(@class, 'entry-title')]
+author: //span[contains(@class, 'author')]/a
+body: //div[contains(@class, 'entry-content')]
+
+strip_id_or_class: extra-hatom-entry-title
+
+test_url: https://www.deskmodder.de/blog/2026/10/24/iphone-duo-erste-displays-brechen-entlang-des-scharniers-apple-verweigert-offenbar-garantieaustausch/
+test_contains: Gleichzeitig reichen einzelne erfolgreiche Belastungstests nicht aus
+
+test_url: https://www.deskmodder.de/blog/2026/10/30/vmware-tools-13-1-6-0-mit-sicherheitskorrekturen-und-mehr/

@@ -1,0 +1,7 @@
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' _2JIqM ')]
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' _3Gr3h ')]
+strip: //em
+strip: //p[contains(normalize-space(.), 'Subscribe to our Newsletter, join our 80 Level Talent platform and Discord, and')]
+
+
+test_url: https://80.lv/articles/trailer-for-bioware-s-canceled-mass-effect-game-apparently-leaks-online
