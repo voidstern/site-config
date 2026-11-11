@@ -8,6 +8,7 @@ author: //span[contains(concat(' ',normalize-space(@class),' '),' author-name ')
 strip: //div[contains(concat(' ',normalize-space(@class),' '),' fs-sm ')]
 strip: //h1[contains(concat(' ',normalize-space(@class),' '),' h1 ')]
 strip: //hr
+strip: //div[a[@href='https://ko-fi.com/9to5linux']]
 strip: //p[preceding::hr]/span[@class="embed-youtube"]
 strip_id_or_class: ad-disclaimer-container
 strip_id_or_class: after_disclaimer_placement
@@ -20,9 +21,13 @@ strip_id_or_class: container
 strip_id_or_class: disclaimer-affiliate
 strip_id_or_class: google-news-link
 strip_id_or_class: h-read-also
+strip_id_or_class: jp-relatedposts
 strip_id_or_class: post-meta
 strip_id_or_class: related-guides
 
+web_view_load: yes
 
 test_url: https://9to5linux.com/coreboot-26-03-open-source-firmware-adds-full-support-for-intel-pantherlake-socs
 test_url: https://9to5linux.com/lxqt-2-2-desktop-environment-released-with-many-wayland-improvements
+test_url: https://9to5linux.com/mozilla-thunderbird-160-email-client-released-with-various-improvements
+test_contains: Linux users can also install Thunderbird from their distro’s repositories
