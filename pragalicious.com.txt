@@ -1,0 +1,10 @@
+title: //h1[contains(concat(" ", normalize-space(@class), " "), ' is-title ')]
+body: //div[contains(concat(" ", normalize-space(@class), " "), ' main-content ')]
+
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' author-box ')]
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' has-author-img ')]
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' items-center ')][ancestor::div[@id='smart-head-mobile']]
+
+web_view_load: yes
+
+test_url: https://pragalicious.com/2026/11/12/dragonkin-the-banished-krijgt-nieuwe-gratis-update/

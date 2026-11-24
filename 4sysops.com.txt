@@ -1,0 +1,19 @@
+title: //h1[@itemprop='headline']
+author: //span[contains(concat(" ", normalize-space(@class), " "), ' author-name ')]
+body: //div[@id='page']
+
+strip: //*[@id='page']//*[not(ancestor-or-self::*[@id='single-excerpt' or @itemprop='text']) and not(descendant::*[@id='single-excerpt' or @itemprop='text'])]
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' ac-post-mail ')]
+strip: //div[contains(concat(" ", normalize-space(@class), " "), ' f4s-join-promo ')][ancestor::div[@itemprop='text']]
+strip_id_or_class: ac-chatbot-actions
+strip_id_or_class: f4s-incontent-wrap
+strip_id_or_class: rtoc-mokuji-wrapper
+
+prune: no
+web_view_load: yes
+
+test_url: https://4sysops.com/archives/microsoft-365-outage-persists-as-restored-servers-fail-under-traffic/
+test_contains: Microsoft’s efforts to restore a Microsoft 365 outage hit another obstacle
+
+test_url: https://4sysops.com/archives/kubevirt-graduates-from-cncf-bringing-vms-and-containers-closer-together/
+test_contains: KubeVirt, an open-source project for managing virtual machines alongside containers on Kubernetes
