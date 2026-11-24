@@ -3,5 +3,7 @@ author: //h5[contains(@class, 'byline')]
 date: substring-after(//h4[contains(@class, 'posted')], 'Posted: ')
 body: //div[@data-cy="storyWrapper"]
 body: //div[@class="story"]
+http_header(user-agent): wallabag
 
 test_url: http://www.cbc.ca/news/world/story/2012/01/16/cruise-ship-monday.html
+test_url: https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287
