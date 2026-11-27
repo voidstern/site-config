@@ -12,6 +12,8 @@ single_page_link: //div[@id='main']//a[normalize-space(.)='Entire Work']
 single_page_link: //div[@id='main']//a[contains(@href, 'view_adult=true')]
 
 strip: //h2[contains(concat(' ',normalize-space(@class),' '),' title ')]
+strip: //*[contains(@id,'preface') or contains(@class,'preface') or contains(@rel,'preface')][not(self::div[contains(concat(' ',normalize-space(@class),' '),' chapter ') and contains(concat(' ',normalize-space(@class),' '),' preface ')])]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' preface ')]/node()[not(self::h3[contains(concat(' ',normalize-space(@class),' '),' title ')])]
 strip_id_or_class: add_comment
 strip_id_or_class: add_comment_placeholder
 strip_id_or_class: feedback
@@ -21,7 +23,6 @@ strip_id_or_class: header
 strip_id_or_class: kudos
 strip_id_or_class: landmark
 strip_id_or_class: navigation
-strip_id_or_class: preface
 
 http_header(User-Agent): PHP/8.4
 prune: no
